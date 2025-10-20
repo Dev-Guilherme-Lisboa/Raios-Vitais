@@ -1,0 +1,344 @@
+* {
+    scroll-behavior: smooth;
+    scroll-margin-top: 80px; /* Ajuste conforme a altura da navbar */
+    scrollbar-width: thin;
+    scrollbar-color: #a200ff #f4f4f4;
+    /* Descomente para esconder a scrollbar */
+    /* scrollbar-width: none; */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    flex-direction: column;
+}
+.navbar {
+    background-color: white;
+    color: black;
+    padding: 7.5px;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    top: 0;
+    position: sticky;
+}
+.titulo {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    margin-right: 10px;
+}
+.slogan {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: normal;
+}
+nav {
+    margin: 0;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+li {
+    margin: 0 20px;
+}
+li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+li a:hover {
+    color: #007BFF;
+}
+
+.burg{
+    display: flex;
+    flex-direction: row;
+    transition: 0.5s;
+    padding: 3px;
+}
+
+.burg:hover{
+    cursor: pointer;
+    filter: brightness(200%);
+    background-color: #e2e2e2;
+}
+
+.burg > li  {
+    border-radius: 3px;
+    height: 4px;
+    width: 30px;
+    margin-top: 4px;
+    background-color: #ec008c;
+}
+
+
+/* Serviços */
+
+
+
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.bem_vindo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulo_servicos{
+    justify-self: center;
+    align-self: center;
+}
+.serviços {
+    text-align: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.Cards {
+    
+
+    display: inline-block;
+    margin: 30px;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 320px;  
+    max-width: 320px;      
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+section h3 {
+    margin-top: 10px;
+}
+section p {
+    margin-top: 10px;
+    text-align: justify;
+}
+section a {
+    text-decoration: none;
+}
+section button, .Esconder {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+section button:hover, .Esconder:hover {
+    background-color: #0056b3;
+}
+
+.funcionarios {
+    text-align: center;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo_funcionarios {
+    margin-bottom: 20px;
+
+    width: 100%;
+}
+article {
+
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+
+    width: 100%;
+    max-width: 360px;
+    margin: 10px;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+article img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 75%;
+}
+.info_funcionario {
+    margin-left: 0;      
+    text-align: center;
+}
+.info_funcionario h3 {
+    margin-top: 10px;
+}
+.info_funcionario p {
+    display: block;
+    text-align: justify;
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.contato {
+    margin-bottom: 10px;
+}
+.localizacao {
+    margin-bottom: 10px;
+}
+
+/* ------------------------------------ PHP e Javascript -------------------------------  */
+
+.hide, .titulo-hide, .slogan-hide, .burg-hide, .desc-hide{
+    display: none;
+}
+
+
+.tituloBurg {
+    display: flex;
+    align-items: center;
+}
+.sloganBurg {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 0;
+    margin: 2px;
+}
+.Esconder{
+    width: 150px;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+.logo-med{
+    width: 80px;
+}
+.logo-peq{
+    width: 40px;
+}
+
+
+
+/* -------------------------- Media queries -------------------------- */
+
+
+
+@media (max-width: 620px) {
+   .Cards{
+    width: 100vw;
+    max-width: none;
+   }
+
+   main{
+    padding: 0;
+    margin: 0;
+   }
+
+   article {
+
+    
+
+    width: 100vw;
+    max-width: none;
+    margin: 0px;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+}
+
+
+@media (max-width: 900px) {
+    
+    .menu-hide{
+        display: none;
+    }
+    .burg-hide{
+        display: block;
+    }
+
+    .dropdown{
+        display: flex;
+    }
+
+    .dropdown-hide{
+        display: none;
+    }
+
+    .menu-dropdown{
+        position: fixed;
+        background-color: white;
+        padding: 2px;
+        z-index: 10;
+        right: 0;
+        width: 400px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 5px;
+        padding-top: 2px;
+    }
+    .menu-dropdown li{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 1s;
+    }
+    .menu-dropdown li:hover{
+        background-color: #bfbfbf;
+    }
+    .menu-dropdown li a{
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+}
+
+@media (min-width: 900px) {
+    .funcionarios {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .titulo_funcionarios {
+        flex-basis: 100%;
+    }
+}
