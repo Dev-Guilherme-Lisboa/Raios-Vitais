@@ -10,32 +10,50 @@
     <!-- Navbar -->
     <header class="navbar">
         <div class="titulo">
-            <img src="img/Logo.png" alt="Logo Raios Vitais" class="logo" width="80" height="80">
+            <img src="img/Logo.png" alt="Logo Raios Vitais" class="logo">
             <h2 class="slogan">
                 Centro de Estética Corporal e Facial <br> 
                 Raios Vitais
             </h2>
+            <h2 class="sloganDois slogan slogan-hide">
+                Raios Vitais
+            </h2>
         </div>
         <nav>
-            <ul>
+            <ul class="burg burg-hide">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul class="menu menu-hide">
                 <li><a href="#bem_vindo">Inicio</a></li>
                 <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#funcionarios">Funcionarios</a></li>
                 <li><a href="#contato">Contato</a></li>
                 <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="login.html">Fazer agendamento</a></li>
+                <!-- <li class="hide"><a href="login.html">Fazer agendamento</a></li> -->
             </ul>
         </nav>
+        
     </header>
+            <ul class="menu-dropdown dropdown-hide">
+                <li><a href="#bem_vindo">Inicio</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#funcionarios">Funcionarios</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <!-- <li"><a href="login.html">Fazer agendamento</a></li> -->
+            </ul>
     <main>
         <div class="bem_vindo" id="bem_vindo">
             <h1>Bem-vindo ao Raios Vitais</h1>
             <p>Seu portal de informações sobre saúde e bem-estar.</p>
         </div>
         <!-- Serviços -->
+
+        <h2 class="titulo_servicos" id="servicos">Serviços</h2>
         <div class="serviços">
-            <h2 class="titulo_servicos" id="servicos">Serviços</h2>
-            <section>
+            <section class="Cards">
                 <img src="img/Massagem_costas.jpg" alt="Massagem nas costas">
                 <h3>Massagem nas costas</h3>
                 <p>
@@ -47,25 +65,43 @@
                     <button>Ver mais</button>
                 </a>
                 <a href="#">
-                    <button>Fazer agendamento</button>
+                    <button class="hide">Fazer agendamento</button>
                 </a>
             </section>
-            <section>
+            <section class="Cards">
                 <img src="img/Massagem_pescoco.jpg" alt="Massagem no pescoço">
                 <h3>Massagem no pescoço</h3>
-                <p>
+                <p class="descricao-bas">
                     Massagem no pescoço com direito a mata leão!
                     bla bla bla bla bla bla bla bla bla bla bla
                     bla bla bla bla bla bla bla bla bla bla bla
                 </p>
+                <p class="descricao-comp desc-hide">
+                    Massagem no pescoço com direito a mata leão!
+                    bla bla bla bla bla bla bla bla bla bla bla
+                    bla bla bla bla bla bla bla bla bla bla bla
+                    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+                    bla bla bla bla bla bla bla bla bla bla bla
+                    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+                    bla bla bla bla bla bla bla bla bla bla bla
+                    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+                    bla bla bla bla bla bla bla bla bla bla bla
+                    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+                    bla bla bla bla bla bla bla bla bla bla bla
+                    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+                    bla bla bla bla bla bla bla bla bla bla bla
+                    bla bla bla bla bla bla bla bla
+                </p>
+
                 <a href="#">
                     <button>Ver mais</button>
                 </a>
                 <a href="#">
-                    <button>Fazer agendamento</button>
+                    <button class="hide">Fazer agendamento</button>
                 </a>
+                
             </section>
-            <section>
+            <section class="Cards">
                 <img src="img/Massagem_rosto.jpeg" alt="Massagem no rosto">
                 <h3>Massagem no rosto</h3>
                 <p>
@@ -77,10 +113,11 @@
                     <button>Ver mais</button>
                 </a>
                 <a href="#">
-                    <button>Fazer agendamento</button>
+                    <button class="hide">Fazer agendamento</button>
                 </a>
             </section>
-            <section>
+
+            <section class="Cards">
                 <img src="img/Massagem_pes.jpeg" alt="Massagem nos pés">
                 <h3>Massagem nos pés</h3>
                 <p>
@@ -92,10 +129,10 @@
                     <button>Ver mais</button>
                 </a>
                 <a href="#">
-                    <button>Fazer agendamento</button>
+                    <button class="hide">Fazer agendamento</button>
                 </a>
             </section>
-            <section>
+            <section class="Cards">
                 <img src="img/Massagem_pernas.jpg" alt="Massagem nas pernas">
                 <h3>Massagem nas pernas</h3>
                 <p>
@@ -107,10 +144,10 @@
                     <button>Ver mais</button>
                 </a>
                 <a href="#">
-                    <button>Fazer agendamento</button>
+                    <button class="hide">Fazer agendamento</button>
                 </a>
             </section>
-            <section>
+            <section class="Cards">
                 <img src="img/Massagem_abdomen.jpg" alt="Massagem no abdômen">
                 <h3>Massagem no abdômen</h3>
                 <p>
@@ -122,10 +159,13 @@
                     <button>Ver mais</button>
                 </a>
                 <a href="#">
-                    <button>Fazer agendamento</button>
+                    <button class="hide">Fazer agendamento</button>
                 </a>
             </section>
+            
         </div>
+        <button class="Esconder">MostrarMais</button>
+        <button class="Esconder hide">Esconder</button>
     </main> 
     <!-- Funcionarios -->
     <div class="funcionarios" id="funcionarios">
@@ -155,9 +195,9 @@
     <!-- Footer -->
     <footer id="contato">
         <div class="contato">
-            <a href="#"><img src="img/whatsapp_icon" alt="WhatsApp"></a>
-            <a href="#"><img src="img/facebook_icon" alt="Facebook"></a>
-            <a href="#"><img src="img/instagram_icon" alt="Instagram"></a>
+            <a href="#" class="whats"></a>
+            <a href="#" class="facebook"></a>
+            <a href="#" class="insta"></a>
         </div>
         <div class="localizacao">
             <p>Endereço: Rua da Saúde, 123, Cidade, Estado</p>
