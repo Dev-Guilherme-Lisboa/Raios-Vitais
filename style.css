@@ -59,7 +59,21 @@ li a {
     transition: color 0.3s;
 }
 li a:hover {
-    color: #007BFF;
+    color: #ec008c;
+}
+.menu{
+height: 40px;
+}
+.menu li, .menu li a{
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li a{
+    width: 100%;
 }
 
 .burg{
@@ -148,14 +162,16 @@ section button, .Esconder {
     margin-top: 15px;
     padding: 10px 20px;
     border-radius: 10px;
-    background-color: #007BFF;
+    background-color: #ec008c;
     color: white;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: filter 0.3s;
+    transition: scale 0.3s;
 }
 section button:hover, .Esconder:hover {
-    background-color: #0056b3;
+    filter: brightness(140%);
+    scale: 1.1;
 }
 
 .funcionarios {
@@ -206,14 +222,35 @@ article img {
 }
 
 footer {
-    background-color: #333;
+    background-color: #4c2c3f;
     color: white;
     text-align: center;
     padding: 20px;
 }
 .contato {
     margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
+
+.whats, .facebook, .insta{
+width: 60px;
+height: 60px;
+display: block;
+transition-duration: 0.4s;
+}
+
+.whats:hover, .facebook:hover, .insta:hover{
+    scale: 1.1;
+}
+
+.whats{background-image: url("img/whatsapp.webp"); background-size: contain;}
+.facebook{background-image: url("img/facebook.webp");  background-size: 87%; background-repeat: no-repeat; background-position: center;}
+.insta{background-image: url("img/instagram.png");  background-size: 110%;}
+
+
 .localizacao {
     margin-bottom: 10px;
 }
@@ -340,5 +377,9 @@ footer {
     }
     .titulo_funcionarios {
         flex-basis: 100%;
+    }
+
+    .menu-dropdown{
+        display: none;
     }
 }
