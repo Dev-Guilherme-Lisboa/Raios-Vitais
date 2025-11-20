@@ -25,11 +25,12 @@
             <a href="CadastroCliente.php"><h2 class='cadastrar'>Cadastrar-se</h2></a>
         </div>
         <div class="user-box">
-            <Label>Seu email:</Label>
-            <input type="email" name="email" id="">
-            <Label>Sua senha:</Label> 
-            <input type="password" name="senha" id="">
-            <a href="#"><p>Esqueci minha senha</p></a>
+            <Label>Nome completo:</Label>
+            <input type="text" name="nome" id="" placeholder="Exemplo: João da Silva Souza">
+            <Label>Email:</Label>
+            <input type="email" name="email" id="" placeholder="Exemplo@gmail.com">
+            <Label>Senha:</Label> 
+            <input type="password" name="senha" id="" placeholder="No mínimo 8 caracteres">
             <!-- <p>Cpf: <input type="number" name="cpf" id=""></p> -->
             <!-- <p>rg: <input type="number" name="rg" id=""></p> -->
             <!-- <p>Cidade <input type="text" name="cidade" id=""></p> -->

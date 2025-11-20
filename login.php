@@ -13,21 +13,23 @@
     
         if(isset($_SESSION)){
             // if $_SERVE['idUsuario']
+            header("Location: dashboard.php");
         }
-        header("Location: dashboard.php");
         include('header.php');
     ?>
+    
     <form action="CadastroCliente.act.php" method="post">
         <div class="sessoes">
-            <a href="login.php"><h2>Login</h2></a>
+            <a href="login.php"><h2 class='cadastrar'>Entrar</h2></a>
             <h2>|</h2>
-            <a href="CadastroCliente.php"><h2>Cadastro</h2></a>
+            <a href="CadastroCliente.php"><h2>Cadastrar-se</h2></a>
         </div>
         <div class="user-box">
             <Label>Email:</Label>
             <input type="email" name="email" id="">
-            <Label>Senha</Label> 
+            <Label>Senha:</Label> 
             <input type="password" name="senha" id="">
+            <a href="#"><p>Esqueci minha senha</p></a>
         </div>
         <p class="botao"><input type="submit" value="Enviar" id="formCliente" onsubmit=""></p>
         <!-- <input type="submit" value="Gerar Relatorio"> -->

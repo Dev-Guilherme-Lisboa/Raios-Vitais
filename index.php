@@ -23,9 +23,8 @@
                 <img src="img/Massagem_costas.jpg" alt="Massagem nas costas">
                 <h3>Massagem nas costas</h3>
                 <p>
-                    Massagem nas costas com direito a soco na costela!
-                    bla bla bla bla bla bla bla bla bla bla bla bla
-                    bla bla bla bla bla bla bla bla bla
+                    Focada em aliviar tensões musculares acumuladas na região dorsal. 
+                    Melhora a circulação, reduz dores e proporciona profundo relaxamento.
                 </p>
                 <a href="#">
                     <button>Ver mais</button>
@@ -38,42 +37,22 @@
                 <img src="img/Massagem_pescoco.jpg" alt="Massagem no pescoço">
                 <h3>Massagem no pescoço</h3>
                 <p class="descricao-bas">
-                    Massagem no pescoço com direito a mata leão!
-                    bla bla bla bla bla bla bla bla bla bla bla
-                    bla bla bla bla bla bla bla bla bla bla bla
+                    Indicada para aliviar rigidez e desconfortos causados por estresse ou 
+                    má postura. Ajuda a soltar a musculatura e aumentar a mobilidade.
                 </p>
-                <p class="descricao-comp desc-hide">
-                    Massagem no pescoço com direito a mata leão!
-                    bla bla bla bla bla bla bla bla bla bla bla
-                    bla bla bla bla bla bla bla bla bla bla bla
-                    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-                    bla bla bla bla bla bla bla bla bla bla bla
-                    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-                    bla bla bla bla bla bla bla bla bla bla bla
-                    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-                    bla bla bla bla bla bla bla bla bla bla bla
-                    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-                    bla bla bla bla bla bla bla bla bla bla bla
-                    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-                    bla bla bla bla bla bla bla bla bla bla bla
-                    bla bla bla bla bla bla bla bla
-                </p>
-
                 <a href="#">
                     <button>Ver mais</button>
                 </a>
                 <a href="#">
                     <button class="hide">Fazer agendamento</button>
                 </a>
-                
             </section>
             <section class="Cards">
                 <img src="img/Massagem_rosto.jpeg" alt="Massagem no rosto">
                 <h3>Massagem no rosto</h3>
                 <p>
-                    Massagem no rosto com direito a quebra queixo!
-                    bla bla bla bla bla bla bla bla bla bla bla
-                    bla bla bla bla bla bla bla bla bla bla bla
+                    Técnica suave que estimula a circulação facial, reduz inchaço, 
+                    promove relaxamento e pode melhorar o aspecto da pele.
                 </p>
                 <a href="#">
                     <button>Ver mais</button>
@@ -87,9 +66,8 @@
                 <img src="img/Massagem_pes.jpeg" alt="Massagem nos pés">
                 <h3>Massagem nos pés</h3>
                 <p>
-                    Massagem nas pés com direito a cócegas!
-                    bla bla bla bla bla bla bla bla bla bla
-                    bla bla bla bla bla bla bla bla bla bla
+                    Trabalha pontos de tensão e estimula a circulação. 
+                    Proporciona alívio imediato do cansaço e sensação de leveza.
                 </p>
                 <a href="#">
                     <button>Ver mais</button>
@@ -102,9 +80,8 @@
                 <img src="img/Massagem_pernas.jpg" alt="Massagem nas pernas">
                 <h3>Massagem nas pernas</h3>
                 <p>
-                    Massagem nas costas com direito a chave de pernas!
-                    bla bla bla bla bla bla bla bla bla bla bla bla
-                    bla bla bla bla bla bla bla bla bla
+                    Indicada para reduzir inchaço, melhorar o retorno venoso e 
+                    aliviar dores musculares após esforço ou longos períodos em pé.
                 </p>
                 <a href="#">
                     <button>Ver mais</button>
@@ -117,9 +94,8 @@
                 <img src="img/Massagem_abdomen.jpg" alt="Massagem no abdômen">
                 <h3>Massagem no abdômen</h3>
                 <p>
-                    Massagem no abdômen com direito a acupuntura!
-                    bla bla bla bla bla bla bla bla bla bla bla
-                    bla bla bla bla bla bla bla bla bla bla bla
+                    Auxilia na melhora do funcionamento intestinal, redução de inchaço e 
+                    relaxamento da musculatura abdominal, promovendo bem-estar geral.
                 </p>
                 <a href="#">
                     <button>Ver mais</button>
