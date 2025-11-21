@@ -70,24 +70,20 @@ height: 40px;
     justify-content: center;
     align-items: center;
 }
-
 .menu li a{
     width: 100%;
 }
-
 .burg{
     display: flex;
     flex-direction: row;
     transition: 0.5s;
     padding: 3px;
 }
-
 .burg:hover{
     cursor: pointer;
     filter: brightness(200%);
     background-color: #e2e2e2;
 }
-
 .burg > li  {
     border-radius: 3px;
     height: 4px;
@@ -98,8 +94,6 @@ height: 40px;
 
 
 /* Serviços */
-
-
 
 
 main {
