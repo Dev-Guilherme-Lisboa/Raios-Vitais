@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    gap: 20px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+#grade {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+.titulos {
+    font-weight: bold;
+    background-color: #4c2c3f;
+    color: white;
+    padding: 10px;
+    border-radius: 0px;
+}
+.titulos td {
+    width: auto;
+    text-align: left;
+    padding: 5px 10px;
+}
+.linha {
+    background-color: #fff;
+    border: 1px solid #000000;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+table.cartas {
+    width: 100%;
+    border-collapse: collapse;
+}
+table.cartas td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+table.cartas tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+table.cartas tr:hover {
+    background-color: #f1f1f1;
+}
+a {
+    color: #0051ff;
+    text-decoration: none;
+}
+a:hover {
+    color: #ab4aec;
+    text-decoration: underline;
+}
