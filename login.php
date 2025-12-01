@@ -17,7 +17,7 @@
         }
     ?>
     <a href="index.php" class="voltar"><button>Voltar</button></a>
-    <form action="cadastrar.act.php" method="post">
+    <form action="dashboard.php" method="post">
         <div class="sessoes">
             <a href="login.php"><h2 class='cadastrar'>Entrar</h2></a>
             <h2>|</h2>
@@ -27,7 +27,7 @@
             <div class="form-row">
                 <div class="form-field">
                     <Label for="e-mail">E-mail</Label>
-                    <input type="email" name="e-mail" id="" placeholder="Digite seu e-mail" reqired>
+                    <input type="email" name="e-mail" id="" placeholder="Digite seu e-mail" required>
                 </div>
             </div>
             <div class="form-row">

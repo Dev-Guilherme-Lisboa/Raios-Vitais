@@ -3,9 +3,9 @@
     require("connect.php");
 
 
-    if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['email']) && isset($_POST['senha'])) {
+    if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['e-mail']) && isset($_POST['senha'])) {
 
-        $email = mysqli_real_escape_string($con, $_POST['email']);
+        $email = mysqli_real_escape_string($con, $_POST['e-mail']);
         $senha = mysqli_real_escape_string($con, $_POST['senha']);
 
         $stmt = mysqli_prepare($con, "SELECT email , senha, idCliente FROM cliente WHERE email = ? AND senha = ?");
