@@ -8,7 +8,10 @@
 </head>
 <body>
     <?php 
+    session_start();
     include('header.php');
+
+    echo "<script>console.log('PHP variable: " . $_SESSION['Cliente']['idCliente'] . "');</script>";
     ?>
     <main>  
         <div class="bem_vindo" id="bem_vindo">
