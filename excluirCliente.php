@@ -1,7 +1,6 @@
 <?php
-include('connect.php');  // Connect to the database
+include('connect.php'); 
 
-// Check if an ID was provided via GET or POST
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 } elseif (isset($_POST['id'])) {
@@ -15,7 +14,6 @@ if (isset($_GET['id'])) {
     exit;
 }
 
-// Prepare and execute the DELETE statement to remove the client
 if ($stmt = $con->prepare("DELETE FROM cliente WHERE idCliente = ?")) {
     $stmt->bind_param("i", $id);
     if ($stmt->execute()) {
@@ -28,5 +26,5 @@ if ($stmt = $con->prepare("DELETE FROM cliente WHERE idCliente = ?")) {
     echo "Erro na preparação da exclusão: " . $con->error;
 }
 
-$con->close();  // Close the database connection
+$con->close(); 
 ?>

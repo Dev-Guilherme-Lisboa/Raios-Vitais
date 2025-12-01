@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+.voltar {
+    position: relative;
+    z-index: 10;
+}
+.voltar button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    background-color: #ab4aec;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.voltar button:hover {
+    background-color: #9228d6;
+}
+form {
+    background: #fff;
+    padding: 20px;
+    border: #ab4aec 2px solid;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 300px;
+    margin: auto;
+}
+.sessoes {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex: 1 0 320px;
+    gap: 15px;
+}
+.sessoes h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.sessoes a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.sessoes a:hover {
+    color: #ab4aec;
+    font-weight: bold;
+}
+.cadastrar {
+    text-align: center;
+    color: #ab4aec;
+    border-bottom: #ab4aec 2px solid;
+}
+.cadastrar:hover {
+    color: #9228d6;
+    border-bottom: #9228d6 2px solid;
+    font-weight: bold;
+}
+.user-box {
+    margin-bottom: 15px;
+}
+.user-box label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.user-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.user-box input:focus {
+    border: #ab4aec 2px solid;
+    outline: none;
+}
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.form-field {
+    flex: 1;
+}
+.user-box a {
+    color: #ab4aec;
+    font-size: 14px;
+}
+.user-box a:hover {
+    color: #9228d6;
+}
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+}
+.botoes input {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.botoes input[type="submit"] {
+    background: #ab4aec;
+}
+.botoes input[type="reset"] {
+    background: #6c757d;
+}
+.botoes input[type="reset"]:hover {
+    background: #5a6268;
+}
+.botoes input[type="submit"]:hover {
+    background: #9228d6;
+}
