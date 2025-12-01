@@ -11,13 +11,20 @@
 
     <?php
     
+        @session_start();
         if(isset($_SESSION)){
-            // if $_SERVE['idUsuario']
+            // $_POST['email'] = $senha?: null;
+            // $_POST['senha'] = $senha?: null;
+
+            // if ($_SESSION['email'] == $_POST['email'] && $_SESSION['senha'] = $_POST['senha']){
+
+            //     header("clientes.php");
+            // }
         }
-        header("Location: dashboard.php");
+       
         include('header.php');
     ?>
-    <form action="CadastroCliente.act.php" method="post">
+    <form action="dashboard.php" method="post">
         <div class="sessoes">
             <a href="login.php"><h2>Login</h2></a>
             <h2>|</h2>

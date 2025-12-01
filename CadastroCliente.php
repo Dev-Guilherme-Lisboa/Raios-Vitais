@@ -29,8 +29,9 @@
             <input type="email" name="email" id="">
             <Label>Sua senha:</Label> 
             <input type="password" name="senha" id="">
+            <label>Nome:</label>
+            <input type="text" name="nome" id=""></p>
             <a href="#"><p>Esqueci minha senha</p></a>
-            <!-- <p>Cpf: <input type="number" name="cpf" id=""></p> -->
             <!-- <p>rg: <input type="number" name="rg" id=""></p> -->
             <!-- <p>Cidade <input type="text" name="cidade" id=""></p> -->
             <!-- <p>Bairro <input type="text" name="bairro" id=""></p> -->

@@ -8,7 +8,7 @@
     @session_start();
     $msg = "";
     
-    if(mysqli_query($con, "INSERT INTO `cliente`(`idCliente`, `Nome`, `Senha`, `CPF`, `RG`, `Telefone`, `DataNascimento`) VALUES (NULL,'$nome','$senha',$rand,$randDois,00,00)")){
+    if(mysqli_query($con, "INSERT INTO `cliente`(`idCliente`, `Nome`, `Senha`, `CPF`, `RG`, `Telefone`, `DataNascimento`, `email`) VALUES (NULL,'$nome','$senha',$rand,$randDois,00,00,'$email')")){
         $msg = "<p class=green>Registro Criado com sucesso!</p>";
 
     
