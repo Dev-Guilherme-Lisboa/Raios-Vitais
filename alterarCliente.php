@@ -64,9 +64,10 @@ if ($stmt = $con->prepare($select_sql)) {
 <html>
 <head>
     <title>Alterar Cliente</title>
+    <link rel="stylesheet" href="alterarCliente.css">
 </head>
 <body>
-<h2>Alterar Cliente</h2>
+
 
 <?php
 if (!empty($message)) {
@@ -74,27 +75,29 @@ if (!empty($message)) {
 }
 ?>
 
+<a href="clientes.php" class="voltar"><button>Voltar</button></a>
 <form method="post" action="">
-    <label for="nome">Nome:</label><br>
+    <h2>Alterar Cliente</h2>
+    <label for="nome">Nome:</label>
     <input type="text" id="nome" name="nome" 
-           value="<?= htmlspecialchars($nome) ?>" required><br><br>
+           value="<?= htmlspecialchars($nome) ?>" required>
 
-    <label for="email">Email:</label><br>
+    <label for="email">Email:</label>
     <input type="email" id="email" name="email" 
-           value="<?= htmlspecialchars($email) ?>" required><br><br>
+           value="<?= htmlspecialchars($email) ?>" required>
 
-    <label for="senha">Senha:</label><br>
+    <label for="senha">Senha:</label>
     <input type="text" id="senha" name="senha" 
-           value="<?= htmlspecialchars($senha) ?>" required><br><br>
-    <label for="senha">CPF:</label><br>
+           value="<?= htmlspecialchars($senha) ?>" required>
+    <label for="senha">CPF:</label>
     <input type="text" id="CPF" name="CPF" 
-           value="<?= htmlspecialchars($CPF) ?>" ><br><br>
-    <label for="senha">RG:</label><br>
+           value="<?= htmlspecialchars($CPF) ?>" >
+    <label for="senha">RG:</label>
     <input type="text" id="RG" name="RG" 
-           value="<?= htmlspecialchars($RG) ?>" ><br><br>
-    <label for="senha">Telefone:</label><br>
+           value="<?= htmlspecialchars($RG) ?>" >
+    <label for="senha">Telefone:</label>
     <input type="text" id="Telefone" name="Telefone" 
-           value="<?= htmlspecialchars($Telefone) ?>" ><br><br>
+           value="<?= htmlspecialchars($Telefone) ?>" >
     
 
     <input type="submit" value="Atualizar Cliente">

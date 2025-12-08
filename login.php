@@ -11,8 +11,7 @@
 
     <?php
     include('header.php');
-        if(isset($_SESSION)){
-            // if $_SERVE['idUsuario']
+        if(isset($_SESSION['Cliente']['idCliente'])){
             header("Location: dashboard.php");
         }
     ?>

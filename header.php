@@ -21,27 +21,58 @@
 
             <?php
 
-                $url = $_SERVER['REQUEST_URI'];
+            session_start();
+            if(isset($_SESSION['Cliente']['idCliente'])){
+            echo "<script>console.log('PHP variable: " . $_SESSION['Cliente']['idCliente'] . "');</script>";
+
+                if ($url != '/vitais/clientes.php'){
+
+                    echo "<ul class='menu menu-hide'>
+                    <li><a href='#bem_vindo'>Inicio</a></li>
+                    <li><a href='#servicos'>Serviços</a></li>
+                    <li><a href='#funcionarios'>Funcionarios</a></li>
+                    <li><a href='#contato'>Contato</a></li>
+                    <li><a href='login.php'>logout</a></li>
+                    </ul>";
+
+                } else{
+                    echo "<ul class='menu menu-hide'>
+                    <li><a href='http://localhost/vitais/index.php#bem_vindo'>Inicio</a></li>
+                    <li><a href='http://localhost/vitais/index.php#servicos'>Serviços</a></li>
+                    <li><a href='http://localhost/vitais/index.php#funcionarios'>Funcionarios</a></li>
+                    <li><a href='http://localhost/vitais/index.php#contato'>Contato</a></li>
+                    <li><a href='galeria.html'>Galeria</a></li>
+                    <li><a href='login.php'>logout/a></li>
+                    </ul>'";
+                }
+
+            }else{
+
+
                 
-            if ($url != '/vitais/clientes.php'){
+                    $url = $_SERVER['REQUEST_URI'];
+                    
+                if ($url != '/vitais/clientes.php'){
 
-                echo "<ul class='menu menu-hide'>
-                <li><a href='#bem_vindo'>Inicio</a></li>
-                <li><a href='#servicos'>Serviços</a></li>
-                <li><a href='#funcionarios'>Funcionarios</a></li>
-                <li><a href='#contato'>Contato</a></li>
-                <li><a href='galeria.html'>Galeria</a></li>
-                </ul>";
+                    echo "<ul class='menu menu-hide'>
+                    <li><a href='#bem_vindo'>Inicio</a></li>
+                    <li><a href='#servicos'>Serviços</a></li>
+                    <li><a href='#funcionarios'>Funcionarios</a></li>
+                    <li><a href='#contato'>Contato</a></li>
+                    <li><a href='login.php'>logar</a></li>
+                    </ul>";
 
-            } else{
-                echo "<ul class='menu menu-hide'>
-                <li><a href='http://localhost/vitais/index.php#bem_vindo'>Inicio</a></li>
-                <li><a href='http://localhost/vitais/index.php#servicos'>Serviços</a></li>
-                <li><a href='http://localhost/vitais/index.php#funcionarios'>Funcionarios</a></li>
-                <li><a href='http://localhost/vitais/index.php#contato'>Contato</a></li>
-                <li><a href='galeria.html'>Galeria</a></li>
-                </ul>'";
+                } else{
+                    echo "<ul class='menu menu-hide'>
+                    <li><a href='http://localhost/vitais/index.php#bem_vindo'>Inicio</a></li>
+                    <li><a href='http://localhost/vitais/index.php#servicos'>Serviços</a></li>
+                    <li><a href='http://localhost/vitais/index.php#funcionarios'>Funcionarios</a></li>
+                    <li><a href='http://localhost/vitais/index.php#contato'>Contato</a></li>
+                    <li><a href='login.php'>logar</a></li>
+                    </ul>'";
+                }
             }
+
             ?>
 
             <!-- <li class="hide"><a href="login.html">Fazer agendamento</a></li> -->
@@ -56,6 +87,5 @@
                 <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#funcionarios">Funcionarios</a></li>
                 <li><a href="#contato">Contato</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
                 <!-- <li"><a href="login.html">Fazer agendamento</a></li> -->
             </ul>
