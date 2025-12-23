@@ -9,6 +9,8 @@
 <body>
     <?php 
     include('header.php');
+
+   
     ?>
     <main>  
         <div class="bem_vindo" id="bem_vindo">
