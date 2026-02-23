@@ -48,7 +48,7 @@ while($cliente = mysqli_fetch_array($clientes)){
     // echo "<td>$cliente[email] </td>";
     echo "<td>$cliente[Telefone] </td>";
     echo "<td>$cliente[DataNascimento] </td>";
-    echo "<td><a href=alterar.php><div>Alterar</div></a></td>";
+    echo "<td><a href=alterarCliente.php?id=$cliente[idCliente]><div>Alterar</div></a></td>";
     echo "<td><a href=javascript:excluir($cliente[idCliente])><div>Excluir</div></a></td>";
     echo "</tr>";
 }

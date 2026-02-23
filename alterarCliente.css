@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.voltar {
+    position: relative;
+    z-index: 10;
+}
+.voltar button {
+    
+    justify-content: start;
+    padding: 10px 15px;
+    background-color: #ab4aec;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.voltar button:hover {
+    background-color: #9228d6;
+}
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 500px;
+    margin: auto;
+}
+.sessoes {
+    text-align: center;
+    display: flex;
+    flex: 1 0 320px;  
+    max-width: 320px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.sessoes a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.sessoes a:hover {
+    color: #ab4aec;
+    font-weight: bold;
+}
+.cadastrar {
+    text-align: center;
+    border-bottom: #333 2px solid;
+}
+.cadastrar:hover {
+    border-bottom: #ab4aec 2px solid;
+    font-weight: bold;
+}
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background: #ab4aec;
+}
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
