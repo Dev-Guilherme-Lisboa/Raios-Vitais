@@ -8,7 +8,7 @@
         $email = mysqli_real_escape_string($con, $_POST['e-mail']);
         $senha = mysqli_real_escape_string($con, $_POST['senha']);
 
-        $stmt = mysqli_prepare($con, "SELECT email , senha, idCliente FROM cliente WHERE email = ? AND senha = ?");
+        $stmt = mysqli_prepare($con, "SELECT email , senha,nome, idCliente FROM cliente WHERE email = ? AND senha = ?");
         mysqli_stmt_bind_param($stmt, "ss", $email, $senha);
         mysqli_stmt_execute($stmt);
         $result = mysqli_stmt_get_result($stmt);
@@ -21,10 +21,12 @@
         $_SESSION['Cliente']['idCliente'] = $resultado['idCliente'];
         $_SESSION['Cliente']['email'] = $resultado['email'];
         $_SESSION['Cliente']['senha'] = $resultado['senha'];
+        $_SESSION['Cliente']['nome'] = $resultado['nome'];
 
-        print ($_SESSION['Cliente']['senha']);
+        print($_SESSION['Cliente']['nome']);
+        print($_SESSION['Cliente']['senha']);
 
 
-        header("index.php");
+        header('Location: index.php');
     }
     ?>

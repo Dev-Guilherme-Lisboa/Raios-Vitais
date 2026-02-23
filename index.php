@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Raios Vitais</title>
 </head>
 <body>
@@ -14,6 +13,23 @@
     ?>
     <main>  
         <div class="bem_vindo" id="bem_vindo">
+
+            
+            <?php
+            
+            
+            
+
+            if(isset($_SESSION['Cliente']['idCliente'])){
+
+            $nome = $_SESSION['Cliente']['nome'];
+
+
+            echo "<script> alert(' {$nome}')</script>";
+
+            }
+
+            ?>
             <h1>Bem-vindo ao Raios Vitais</h1>
             <p>Seu portal de informações sobre saúde e bem-estar.</p>
         </div>
@@ -29,7 +45,6 @@
                     Melhora a circulação, reduz dores e proporciona profundo relaxamento.
                 </p>
                 <a href="#">
-                    <button>Ver mais</button>
                 </a>
                 <a href="#">
                     <button class="hide">Fazer agendamento</button>
@@ -43,7 +58,6 @@
                     má postura. Ajuda a soltar a musculatura e aumentar a mobilidade.
                 </p>
                 <a href="#">
-                    <button>Ver mais</button>
                 </a>
                 <a href="#">
                     <button class="hide">Fazer agendamento</button>
@@ -57,7 +71,6 @@
                     promove relaxamento e pode melhorar o aspecto da pele.
                 </p>
                 <a href="#">
-                    <button>Ver mais</button>
                 </a>
                 <a href="#">
                     <button class="hide">Fazer agendamento</button>
@@ -72,7 +85,6 @@
                     Proporciona alívio imediato do cansaço e sensação de leveza.
                 </p>
                 <a href="#">
-                    <button>Ver mais</button>
                 </a>
                 <a href="#">
                     <button class="hide">Fazer agendamento</button>
@@ -86,7 +98,6 @@
                     aliviar dores musculares após esforço ou longos períodos em pé.
                 </p>
                 <a href="#">
-                    <button>Ver mais</button>
                 </a>
                 <a href="#">
                     <button class="hide">Fazer agendamento</button>
@@ -100,7 +111,6 @@
                     relaxamento da musculatura abdominal, promovendo bem-estar geral.
                 </p>
                 <a href="#">
-                    <button>Ver mais</button>
                 </a>
                 <a href="#">
                     <button class="hide">Fazer agendamento</button>
@@ -108,8 +118,8 @@
             </section>
             
         </div>
-        <button class="Esconder">MostrarMais</button>
-        <button class="Esconder hide">Esconder</button>
+        <!-- <button class="Esconder">MostrarMais</button>
+        <button class="Esconder hide">Esconder</button> -->
     </main> 
     <!-- Funcionarios -->
     <div class="funcionarios" id="funcionarios">
