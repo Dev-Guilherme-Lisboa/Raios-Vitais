@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Raios Vitais</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md py-4 px-6 flex items-center justify-between relative w-full mr-4 mt-2 mb-2">
+        <div class="flex items-center space-x-4 w-full justify-center relative">
+            <div class="absolute left-0 top-1/2 transform -translate-y-1/2 ml-4 flex items-center space-x-2">
+            <img src="img/Logo.png" alt="Logo Raios Vitais" class="h-20 w-auto mb-2 mt-2">
+        </div>
+        <div class="text-center w-full relative mr-4 mt-2 mb-2">
+            <h1 class="text-3xl font-semibold text-black">Raios Vitais</h1>
+            <h3 class="text-black">Centro de Estética Corporal e Facial</h3>
+        </div>
+        </div>
+        <div class="flex items-center space-x-4 w-full justify-end relative mr-4 mt-2 mb-2">
+            <ul class="flex space-x-6 text-lg font-medium text-gray-600 justify-end w-full relative mr-4 mt-2 mb-2">
+                <li><a href="#" class="text-black hover:text-pink-600 border-b-2 border-transparent hover:border-pink-600">Início</a></li>
+                <li><a href="#" class="text-black hover:text-pink-600 border-b-2 border-transparent hover:border-pink-600">Serviços</a></li>
+                <li><a href="#" class="text-black hover:text-pink-600 border-b-2 border-transparent hover:border-pink-600">Profissionais</a></li>
+                <li><a href="#" class="text-black hover:text-pink-600 border-b-2 border-transparent hover:border-pink-600">Agendar pelo WhatsApp</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Carrossel -->
+    <div class="relative w-full h-auto overflow-hidden mt-4 px-6 py-4 bg-pink-300/50 rounded-lg shadow-md mr-4 mt-2 mb-2">
+        <div class="flex h-full transition-transform duration-500 ease-in-out relative mr-4 mt-2 mb-2">
+            <div class="w-full flex-shrink-0 items-center justify-center flex text-center relative mr-4 mt-2 mb-2">
+                <div class="w-300 flex-shrink-0 items-center justify-center flex-col text-center relative mr-4 mt-2 mb-2">
+                    <h3 class="text-lg font-semibold text-black">Bem-estar e estética para o seu dia a dia</h3>
+                    <p class="text-gray-600 mt-2 leading-relaxed">
+                        Aqui você encontra tratamentos corporais e faciais que ajudam a relaxar, aliviar o estresse e renovar as energias do dia a dia.
+                        Cada atendimento é feito com carinho e atenção, para que você se sinta bem, confiante e ainda mais bonita.
+                    </p>
+                    <button class="mt-4 bg-rose-400 text-white font-semibold py-2 px-4 rounded hover:bg-pink-700">Saiba mais</button>
+                </div>
+            </div>
+            <div class="w-full flex-shrink-0 items-center justify-center flex flex-col text-center relative mr-4 mt-2 mb-2">
+                <h3 class="text-lg font-semibold text-black">Por que escolher a Raios Vitais?</h3>
+                <p class="text-gray-600 mt-2 leading-relaxed">
+                    Cuidar de si mesma vai além da estética — é um momento de pausa, renovação e bem-estar.
+                    Na Raios Vitais, cada detalhe é pensado para proporcionar uma experiência acolhedora, relaxante e transformadora.
+                </p>
+            </div> 
+            <div class="w-full flex-shrink-0">
+                <h3 class="text-lg font-semibold text-black">Cuidar de você é nossa prioridade!</h3>
+                <p class="text-gray-600 mt-2 leading-relaxed">
+                    Na Raios Vitais, acreditamos que cada pessoa merece um cuidado especial. 
+                    Nossos profissionais estão sempre prontos para ouvir suas necessidades e oferecer o melhor tratamento.
+                </p>
+            </div>
+        </div>
+        <!-- Botões de Navegação -->
+        <button class="absolute left-0 top-1/2 transform -translate-y-1/2 hover:bg-gray-200 hover:text-pink-600 hover:rounded">Anterior</button>
+        <button class="absolute right-0 top-1/2 transform -translate-y-1/2 hover:bg-gray-200 hover:text-pink-600 hover:rounded">Próximo</button>
+    </div>
+</body>
+</html>
