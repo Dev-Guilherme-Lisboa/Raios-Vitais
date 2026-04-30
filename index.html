@@ -7,11 +7,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Raios Vitais</title>
 </head>
-<body>
+<body class="bg-gradient-to-b from-pink-200 via-pink-300 to-purple-400 min-h-screen flex flex-col">
     <!-- Navbar -->
-    <nav class="flex items-center justify-between relative bg-white shadow-md py-4 px-6 w-full mr-4 mt-2 mb-2 rounded-lg">
+    <nav class="flex items-center justify-between relative bg-white shadow-md py-4 px-6 w-full mr-4 mt-2 mb-2 rounded-lg opacity-50 hover:opacity-100 transition-opacity duration-300">
         <div class="flex items-center space-x-4 w-full relative">
-            <div class="absolute left-0 top-1/2 transform -translate-y-1/2 ml-4 flex items-center space-x-2">
+            <div class="items-center justify-center absolute left-0 top-1/2 transform -translate-y-1/2 ml-4 space-x-2">
                 <img class="size-auto rounded-full mb-2 mt-2" src="img/Logo.png" alt="Logo Raios Vitais">
             </div>
             <div class="text-center w-full relative mr-4 mt-2 mb-2">
@@ -25,7 +25,7 @@
                 <li><a href="#" class="hover:text-pink-600 border-b-2 border-transparent hover:border-pink-600">Serviços</a></li>
                 <li><a href="#" class="hover:text-pink-600 border-b-2 border-transparent hover:border-pink-600">Profissionais</a></li>
                 <li>
-                    <button class="flex items-center text-white bg-pink-500/80 hover:bg-pink-500 rounded-full px-4 py-2">
+                    <button class="flex items-center justify-center text-white bg-pink-500/80 hover:bg-pink-500 rounded-full px-4 py-2">
                         <img class="size-7 mr-2" src="/img/calendario.png" alt="Icone de calendario">
                         <a href="#" class="">Agendar pelo WhatsApp</a>
                     </button>
@@ -45,7 +45,7 @@
                     </p>
                     <button class="mt-4 bg-rose-400 text-white font-semibold rounded-full hover:bg-pink-700 py-2 px-4">Saiba mais</button>
                 </div>
-                <div>
+                <div class="flex-1 relative ml-4 mr-4 mt-2 mb-2">
                     <img class="size-auto shadow-xl rounded-lg" src="/img/slide1.jpg" alt="Imagem de slide 1"/>
                 </div>
             </div>
