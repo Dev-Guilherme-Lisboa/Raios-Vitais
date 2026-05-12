@@ -7,38 +7,40 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Raios Vitais</title>
 </head>
-<body class="flex flex-col font-[Cinzel Decorative] bg-gradient-to-b from-pink-200 via-pink-300 to-purple-400 min-h-screen">
+<body class="bg-gradient-to-b from-pink-200 via-pink-300 to-purple-400 min-h-screen">
     <!-- Navbar -->
-    <header class="flex items-center justify-between relative bg-white shadow-md py-4 px-6 w-full mr-4 mt-2 mb-2 rounded-lg opacity-50 hover:opacity-100 transition-opacity duration-300">
-        <div class="flex items-center space-x-4 w-full relative">
-            <div class="items-center justify-center absolute left-0 top-1/2 transform -translate-y-1/2 ml-4 space-x-2">
-                <img class="size-auto rounded-full mb-2 mt-2" src="img/Logo.png" alt="Logo Raios Vitais">
+     <header class="fixed top-0 right-0 left-0 z-50 shadow-md">
+        <nav class="flex items-center justify-between relative bg-white w-full opacity-90 hover:opacity-100 duration-300 py-4 px-6 shadow-md">
+            <div class="flex items-center space-x-4 w-full relative">
+                <div class="items-center justify-center absolute left-0 top-1/2 transform -translate-y-1/2 ml-4 space-x-2">
+                    <img class="size-auto rounded-full mb-2 mt-2" src="img/Logo.png" alt="Logo Raios Vitais">
+                </div>
+                <div class="text-center w-full relative mr-4 mt-2 mb-2">
+                    <h1 class="text-pink-500 text-3xl font-semibold">Raios Vitais</h1>
+                    <h3 class="text-pink-500 font-semibold">Centro de Estética Corporal e Facial</h3>
+                </div>
             </div>
-            <div class="text-center w-full relative mr-4 mt-2 mb-2">
-                <h1 class="text-pink-500 text-3xl font-semibold">Raios Vitais</h1>
-                <h3 class="text-pink-500 font-semibold">Centro de Estética Corporal e Facial</h3>
+            <div class="flex items-center justify-end relative w-full mr-4 mt-2 mb-2">
+                <ul class="flex text-pink-400 items-center space-x-6 text-lg font-semibold justify-end mr-4 mt-2 mb-2">
+                    <li><a href="#" class="hover:text-pink-600 border-b-2 border-transparent hover:border-pink-600">Início</a></li>
+                    <li><a href="#" class="hover:text-pink-600 border-b-2 border-transparent hover:border-pink-600">Serviços</a></li>
+                    <li><a href="#" class="hover:text-pink-600 border-b-2 border-transparent hover:border-pink-600">Profissionais</a></li>
+                    <li>
+                        <button class="flex items-center justify-center text-white bg-pink-500/80 hover:bg-pink-500 rounded-full px-4 py-2">
+                            <img class="size-7 mr-2" src="/img/calendario.png" alt="Icone de calendario">
+                            <a href="#" class="">Agendar pelo WhatsApp</a>
+                        </button>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <nav class="flex items-center justify-end relative w-full mr-4 mt-2 mb-2">
-            <ul class="flex text-pink-400 items-center space-x-6 text-lg font-semibold justify-end mr-4 mt-2 mb-2">
-                <li><a href="#" class="hover:text-pink-600 border-b-2 border-transparent hover:border-pink-600">Início</a></li>
-                <li><a href="#" class="hover:text-pink-600 border-b-2 border-transparent hover:border-pink-600">Serviços</a></li>
-                <li><a href="#" class="hover:text-pink-600 border-b-2 border-transparent hover:border-pink-600">Profissionais</a></li>
-                <li>
-                    <button class="flex items-center justify-center text-white bg-pink-500/80 hover:bg-pink-500 rounded-full px-4 py-2">
-                        <img class="size-7 mr-2" src="/img/calendario.png" alt="Icone de calendario">
-                        <a href="#" class="">Agendar pelo WhatsApp</a>
-                    </button>
-                </li>
-            </ul>
         </nav>
-    </header>
-    <main>
+     </header>
+    <main class="pt-27 px-4">
         <!-- Carrossel -->
-        <div class="flex items-end relative w-auto h-auto overflow-hidden bg-pink-300/50 rounded-lg shadow-md ml-4 mr-4 mt-4 mb-4">
-            <div class="flex items-center md:flex-row md:gap-4 h-full transition-transform duration-500 ease-in-out relative ml-4 mr-4 mt-2 mb-2">
-                <article class="flex md:flex-row flex-shrink-0 md:gap-4 w-full items-center text-center relative ml-4 mr-4 mt-2 mb-2">
-                    <div class="flex-shrink-0 w-300 items-center relative ml-4 mr-4 mt-2 mb-2">
+        <div class="flex items-end relative w-full h-auto overflow-hidden bg-pink-300/50 rounded-lg shadow-md mb-4">
+            <div class="flex overflow-x-auto gap-6 snap-x snap-mandatory scroll-smooth scrollbar-hide items-center md:flex-row md:gap-4 w-full h-full transition-transform duration-500 ease-in-out relative">
+                <article class="flex md:flex-row flex-shrink-0 md:gap-4 w-full items-center text-center relative">
+                    <div class="flex-shrink-0 w-1/2 items-center relative">
                         <h3 class="text-lg font-semibold text-black">Bem-estar e estética para o seu dia a dia</h3>
                         <p class="text-black mt-2 leading-relaxed">
                             Aqui você encontra tratamentos corporais e faciais que ajudam a relaxar, aliviar o estresse e renovar as energias do dia a dia.
@@ -46,31 +48,43 @@
                         </p>
                         <button class="mt-4 bg-rose-400 text-white font-semibold rounded-full hover:bg-pink-700 py-2 px-4">Saiba mais</button>
                     </div>
-                    <div class="flex-1 relative ml-4 mr-4 mt-2 mb-2">
-                        <img class="size-auto shadow-xl rounded-lg" src="/img/slide1.jpg" alt="Imagem de slide 1"/>
+                    <div class="flex w-1/2 relative">
+                        <img class="size-auto" src="/img/slide1.jpg" alt="Imagem de slide 1"/>
                     </div>
                 </article>
-                <article class="flex flex-col w-full flex-shrink-0 items-center justify-center text-center relative mr-4 mt-2 mb-2">
-                    <h3 class="text-lg font-semibold text-black">Por que escolher a Raios Vitais?</h3>
-                    <p class="text-gray-600 mt-2 leading-relaxed">
-                        Cuidar de si mesma vai além da estética — é um momento de pausa, renovação e bem-estar.
-                        Na Raios Vitais, cada detalhe é pensado para proporcionar uma experiência acolhedora, relaxante e transformadora.
-                    </p>
+                <article class="flex md:flex-row flex-shrink-0 md:gap-4 w-full items-center text-center relative">
+                    <div class="flex-shrink-0 w-1/2 items-center relative">
+                        <h3 class="text-lg font-semibold text-black">Por que escolher a Raios Vitais?</h3>
+                        <p class="text-gray-600 mt-2 leading-relaxed">
+                            Cuidar de si mesma vai além da estética — é um momento de pausa, renovação e bem-estar.
+                            Na Raios Vitais, cada detalhe é pensado para proporcionar uma experiência acolhedora, relaxante e transformadora.
+                        </p>
+                        <button class="mt-4 bg-rose-400 text-white font-semibold rounded-full hover:bg-pink-700 py-2 px-4">Saiba mais</button>
+                    </div>
+                    <div class="flex w-1/2 relative">
+                        <img class="size-auto" src="/img/slide2.jpg" alt="Imagem de slide 1"/>
+                    </div>
                 </article> 
-                <article class="w-full flex-shrink-0">
-                    <h3 class="text-lg font-semibold text-black">Cuidar de você é nossa prioridade!</h3>
-                    <p class="text-gray-600 mt-2 leading-relaxed">
-                        Na Raios Vitais, acreditamos que cada pessoa merece um cuidado especial. 
-                        Nossos profissionais estão sempre prontos para ouvir suas necessidades e oferecer o melhor tratamento.
-                    </p>
+                <article class="flex md:flex-row flex-shrink-0 md:gap-4 w-full items-center text-center relative">
+                    <div class="flex-shrink-0 w-1/2 items-center relative">
+                        <h3 class="text-lg font-semibold text-black">Cuidar de você é nossa prioridade!</h3>
+                        <p class="text-gray-600 mt-2 leading-relaxed">
+                            Na Raios Vitais, acreditamos que cada pessoa merece um cuidado especial.
+                            Nossos profissionais estão sempre prontos para ouvir suas necessidades e oferecer o melhor tratamento.
+                        </p>
+                        <button class="mt-4 bg-rose-400 text-white font-semibold rounded-full hover:bg-pink-700 py-2 px-4">Saiba mais</button>
+                    </div>
+                    <div class="flex w-1/2 relative">
+                        <img class="size-auto" src="/img/slide3.jpg" alt="Imagem de slide 1"/>
+                    </div>
                 </article>
             </div>
             <!-- Botões de Navegação -->
             <button class="ml-4 size-8 absolute left-0 top-1/2 transform -translate-y-1/2 hover:bg-pink-300 hover:rounded-full">
-                <img class="size-7" src="/img/seta_esquerda.png" alt="seta esquerda">
+                &#10094;
             </button>
             <button class="mr-4 size-8 absolute right-0 top-1/2 transform -translate-y-1/2 hover:bg-pink-300 hover:rounded-full">
-                <img class="size-7" src="/img/seta_direita.png" alt="seta direita">
+                &#10095;
             </button>
         </div>
         <section class="flex flex-col items-center justify-center ml-4 mt-2 mb-2">
