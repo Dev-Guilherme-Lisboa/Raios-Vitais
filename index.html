@@ -10,34 +10,34 @@
 <body class="bg-gradient-to-b from-pink-200 via-pink-300 to-purple-400 min-h-screen">
     <!-- Navbar -->
      <header class="fixed top-0 right-0 left-0 z-50 shadow-md">
-        <nav class="flex items-center justify-between relative bg-white w-full opacity-90 hover:opacity-100 duration-300 py-4 px-6 shadow-md">
+        <nav class="flex items-center justify-between relative bg-white w-full py-4 px-6 shadow-md">
             <div class="flex items-center space-x-4 w-full relative">
-                <div class="items-center justify-center absolute left-0 top-1/2 transform -translate-y-1/2 ml-4 space-x-2">
-                    <img class="size-auto rounded-full mb-2 mt-2" src="img/Logo.png" alt="Logo Raios Vitais">
+                <div class="flex items-center justify-center ml-4 mt-2 mb-2">
+                    <img class="size-auto rounded-full" src="img/Logo.png" alt="Logo Raios Vitais">
                 </div>
-                <div class="text-center w-full relative mr-4 mt-2 mb-2">
+                <div class="text-center w-full relative mr-4">
                     <h1 class="text-pink-500 text-3xl font-semibold">Raios Vitais</h1>
                     <h3 class="text-pink-500 font-semibold">Centro de Estética Corporal e Facial</h3>
                 </div>
             </div>
             <div class="flex items-center justify-end relative w-full mr-4 mt-2 mb-2">
                 <ul class="flex text-pink-400 items-center space-x-6 text-lg font-semibold justify-end mr-4 mt-2 mb-2">
-                    <li><a href="#" class="hover:text-pink-600 border-b-2 border-transparent hover:border-pink-600">Início</a></li>
-                    <li><a href="#" class="hover:text-pink-600 border-b-2 border-transparent hover:border-pink-600">Serviços</a></li>
-                    <li><a href="#" class="hover:text-pink-600 border-b-2 border-transparent hover:border-pink-600">Profissionais</a></li>
+                    <li><a href="#inicio" class="hover:text-pink-600 border-b-2 border-transparent hover:border-pink-600">Início</a></li>
+                    <li><a href="#servicos" class="hover:text-pink-600 border-b-2 border-transparent hover:border-pink-600">Serviços</a></li>
+                    <li><a href="#profissionais" class="hover:text-pink-600 border-b-2 border-transparent hover:border-pink-600">Profissionais</a></li>
                     <li>
                         <button class="flex items-center justify-center text-white bg-pink-500/80 hover:bg-pink-500 rounded-full px-4 py-2">
                             <img class="size-7 mr-2" src="/img/calendario.png" alt="Icone de calendario">
-                            <a href="#" class="">Agendar pelo WhatsApp</a>
+                            <a href="https://wa.me/+5511992179843" class="">Agendar pelo WhatsApp</a>
                         </button>
                     </li>
                 </ul>
             </div>
         </nav>
      </header>
-    <main class="pt-27 px-4">
+    <main class="pt-27 px-4 flex flex-col items-center justify-center w-full">
         <!-- Carrossel -->
-        <div class="flex items-end relative w-full h-auto overflow-hidden bg-pink-300/50 rounded-lg shadow-md mb-4">
+        <div id="inicio" class="flex items-end relative w-full h-auto overflow-hidden bg-pink-300/50 rounded-lg shadow-md mb-4">
             <div class="flex overflow-x-auto gap-6 snap-x snap-mandatory scroll-smooth scrollbar-hide items-center md:flex-row md:gap-4 w-full h-full transition-transform duration-500 ease-in-out relative">
                 <article class="flex md:flex-row flex-shrink-0 md:gap-4 w-full items-center text-center relative">
                     <div class="flex-shrink-0 w-1/2 items-center relative">
@@ -87,7 +87,8 @@
                 &#10095;
             </button>
         </div>
-        <section class="flex flex-col items-center justify-center ml-4 mt-2 mb-2">
+        <!-- Serviços -->
+        <section id="servicos" class="flex flex-col items-center justify-center w-5/6 mt-2 mb-2">
             <h2 class="text-3xl font-bold text-pink-600 text-center mt-8">Serviços</h2>
             <div class="grid grid-cols-2 md:grid-cols-3 text-center gap-6 py-2 px-4 mt-6 w-full">
                 <article class="flex-1 bg-white/50 rounded-lg shadow-md p-4">
