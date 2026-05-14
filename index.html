@@ -7,13 +7,13 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Raios Vitais</title>
 </head>
-<body class="bg-gradient-to-b from-pink-200 via-pink-300 to-purple-400 min-h-screen">
+<body class="bg-[url(img/fundo.png)] bg-contain scroll-smooth min-h-screen">
     <!-- Navbar -->
      <header class="fixed top-0 right-0 left-0 z-50 shadow-md">
         <nav class="flex items-center justify-between relative bg-white w-full py-4 px-6 shadow-md">
             <div class="flex items-center space-x-4 w-full relative">
                 <div class="flex items-center justify-center ml-4 mt-2 mb-2">
-                    <img class="size-auto rounded-full" src="img/logo.png" alt="Logo Raios Vitais">
+                    <img class="size-auto rounded-full" src="img/Logo.png" alt="Logo Raios Vitais">
                 </div>
                 <div class="text-center w-full relative mr-4">
                     <h1 class="text-pink-500 text-3xl font-semibold">Raios Vitais</h1>
@@ -37,8 +37,8 @@
      </header>
     <main class="pt-31 px-4 flex flex-col items-center justify-center w-full">
         <!-- Carrossel -->
-        <div id="inicio" class="flex items-end relative w-full h-auto overflow-hidden bg-pink-300/50 rounded-lg shadow-md mb-4">
-            <div class="flex overflow-x-auto gap-6 snap-x snap-mandatory scroll-smooth scrollbar-hide items-center md:flex-row md:gap-4 w-full h-full transition-transform duration-500 ease-in-out relative">
+        <div id="inicio" class="flex items-end relative w-full h-auto overflow-hidden rounded-lg shadow-md mb-4">
+            <div class="flex overflow-x-auto bg-linear-to-r from-pink-400/50 to-white/50 gap-6 snap-x snap-mandatory scroll-smooth scrollbar-hide items-center md:flex-row md:gap-4 w-full h-full transition-transform duration-500 ease-in-out relative">
                 <article class="flex md:flex-row flex-shrink-0 md:gap-4 w-full items-center text-center relative">
                     <div class="flex-shrink-0 w-1/2 items-center relative">
                         <h3 class="text-lg font-semibold text-black">Bem-estar e estética para o seu dia a dia</h3>
@@ -88,9 +88,9 @@
             </button>
         </div>
         <!-- Serviços -->
-        <section id="servicos" class="flex flex-col items-center justify-center bg-pink-500/50 outline-2 outline-violet-500 rounded-lg w-5/6 mt-2 mb-2">
+        <section id="servicos" class="flex flex-col items-center justify-center bg-linear-to-r from-pink-400/50 to-white/50 rounded-lg w-full xl:w-5/6 mt-2 mb-2">
             <h2 class="text-3xl font-bold text-pink-600 text-center mt-8">Serviços</h2>
-            <div class="grid grid-cols-2 md:grid-cols-3 text-center gap-6 py-2 px-4 mt-6 w-full">
+            <div class="grid grid-cols-2 lg:grid-cols-3 text-center gap-6 py-2 px-4 mt-6 w-full">
                 <article class="flex-1 bg-white/50 rounded-lg shadow-md p-4">
                     <h3 class="text-center font-semibold text-pink-500 h-auto">Relaxamento nas Cortas</h3>
                     <img src="img/servico1.jpg" alt="Relaxamento nas Cortas" class="size-auto rounded-lg mt-2">
