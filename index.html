@@ -20,33 +20,35 @@
                     <h3 class="text-pink-500 font-semibold">Centro de Estética Corporal e Facial</h3>
                 </div>
             </div>
-            <div class="flex items-center justify-end relative w-full mr-4 mt-2 mb-2">
-                <ul class="flex text-pink-400 items-center space-x-6 text-lg font-semibold justify-end mr-4 mt-2 mb-2">
-                    <li><a href="#inicio" class="hover:text-pink-600 border-b-2 border-transparent hover:border-pink-600">Início</a></li>
-                    <li><a href="#servicos" class="hover:text-pink-600 border-b-2 border-transparent hover:border-pink-600">Serviços</a></li>
-                    <li><a href="#profissionais" class="hover:text-pink-600 border-b-2 border-transparent hover:border-pink-600">Profissionais</a></li>
+            <div class="justify-end relative w-full mr-4 mt-2 mb-2">
+                <ul class="flex items-center justify-end space-x-6 text-pink-400 hover:text-pink-600 text-lg font-semibold mr-4 mt-2 mb-2">
+                    <li><a href="#inicio" class="border-b-2 border-transparent hover:border-pink-600">Início</a></li>
+                    <li><a href="#servicos" class="border-b-2 border-transparent hover:border-pink-600">Serviços</a></li>
+                    <li><a href="#profissionais" class="border-b-2 border-transparent hover:border-pink-600">Profissionais</a></li>
                     <li>
-                        <button class="flex items-center justify-center text-white bg-pink-500/80 hover:bg-pink-500 rounded-full px-4 py-2">
-                            <img class="size-7 mr-2" src="img/calendario.png" alt="Icone de calendario">
-                            <a href="https://wa.me/+5511992179843">Agendar pelo WhatsApp</a>
+                        <button class="flex items-center justify-center cursor-pointer text-white bg-pink-500/80 hover:bg-pink-500 rounded-full shadow-md px-4 py-2">
+                            <a href="https://wa.me/+5511992179843" class="flex items-center justify-center w-full h-full">
+                                <img class="size-7 mr-2" src="img/calendario.png" alt="Icone de calendario">
+                                Agendar pelo WhatsApp
+                            </a>
                         </button>
                     </li>
                 </ul>
             </div>
         </nav>
      </header>
-    <main class="pt-32 flex flex-col items-center justify-center w-full">
+    <main class="pt-32 flex flex-col items-center justify-center w-full" id="inicio">
         <!-- Carrossel -->
-        <div id="inicio" class="flex items-end relative w-full h-auto overflow-hidden shadow-md mb-6">
-            <div class="flex overflow-x-auto bg-linear-to-r from-pink-400/50 to-white/50 gap-6 snap-x snap-mandatory scroll-smooth scrollbar-hide items-center md:flex-row md:gap-4 w-full h-full transition-transform duration-500 ease-in-out relative">
+        <div class="flex items-end relative w-full h-auto overflow-hidden shadow-md mb-6">
+            <div class="flex overflow-x-auto bg-linear-to-r from-rose-400/50 via-white/50 gap-6 snap-x snap-mandatory scroll-smooth scrollbar-hide items-center md:flex-row md:gap-4 w-full h-full transition-transform duration-500 ease-in-out relative">
                 <article class="flex md:flex-row shrink-0 lg:gap-6 gap-4 w-full items-center text-center relative">
                     <div class="flex flex-col w-1/2 items-center justify-center relative">
-                        <h3 class="text-lg font-semibold text-black">Bem-estar e estética para o seu dia a dia</h3>
-                        <p class="text-black w-9/10 mt-2 leading-relaxed">
+                        <h3 class="text-xl text-rose-600 font-bold">Bem-estar e estética para o seu dia a dia</h3>
+                        <p class="text-lg text-pink-500 font-semibold leading-relaxed w-9/10 mt-2">
                             Aqui você encontra tratamentos corporais e faciais que ajudam a relaxar, aliviar o estresse e renovar as energias do dia a dia.
                             Cada atendimento é feito com carinho e atenção, para que você se sinta bem, confiante e ainda mais bonita.
                         </p>
-                        <button class="mt-4 bg-rose-400 text-white font-semibold rounded-full hover:bg-pink-700 py-2 px-4">Saiba mais</button>
+                        <button class="text-white font-semibold bg-rose-400 hover:bg-rose-500 rounded-full shadow-md py-2 px-4 mt-4">Saiba mais</button>
                     </div>
                     <div class="flex w-1/2 relative">
                         <img class="size-auto" src="img/slide1.jpg" alt="Imagem de slide 1"/>
@@ -59,7 +61,7 @@
                             Cuidar de si mesma vai além da estética — é um momento de pausa, renovação e bem-estar.
                             Na Raios Vitais, cada detalhe é pensado para proporcionar uma experiência acolhedora, relaxante e transformadora.
                         </p>
-                        <button class="mt-4 bg-rose-400 text-white font-semibold rounded-full hover:bg-pink-700 py-2 px-4">Saiba mais</button>
+                        <button class="text-white font-semibold bg-rose-400 hover:bg-rose-500 rounded-full shadow-md py-2 px-4 mt-4">Saiba mais</button>
                     </div>
                     <div class="flex w-1/2 relative">
                         <img class="size-auto" src="img/slide2.jpg" alt="Imagem de slide 1"/>
@@ -72,7 +74,7 @@
                             Na Raios Vitais, acreditamos que cada pessoa merece um cuidado especial.
                             Nossos profissionais estão sempre prontos para ouvir suas necessidades e oferecer o melhor tratamento.
                         </p>
-                        <button class="mt-4 bg-rose-400 text-white font-semibold rounded-full hover:bg-pink-700 py-2 px-4">Saiba mais</button>
+                        <button class="text-white font-semibold bg-rose-400 hover:bg-rose-500 rounded-full shadow-md py-2 px-4 mt-4">Saiba mais</button>
                     </div>
                     <div class="flex w-1/2 relative">
                         <img class="size-auto" src="img/slide3.jpg" alt="Imagem de slide 1"/>
@@ -80,15 +82,15 @@
                 </article>
             </div>
             <!-- Botões de Navegação -->
-            <button class="ml-4 size-8 absolute left-0 top-1/2 transform -translate-y-1/2 hover:bg-pink-300 hover:rounded-full">
+            <button class="ml-4 size-8 absolute left-0 top-1/2 -translate-y-1/2 hover:bg-rose-300 hover:rounded-full">
                 &#10094;
             </button>
-            <button class="mr-4 size-8 absolute right-0 top-1/2 transform -translate-y-1/2 hover:bg-pink-300 hover:rounded-full">
+            <button class="mr-4 size-8 absolute right-0 top-1/2 -translate-y-1/2 hover:bg-rose-300 hover:rounded-full">
                 &#10095;
             </button>
         </div>
         <!-- Serviços -->
-        <section id="servicos" class="flex flex-col items-center justify-center bg-linear-to-r from-rose-400/50 via-rose-300/50 to-rose-100/50 w-full mt-6 mb-2">
+        <section class="flex flex-col items-center justify-center bg-linear-to-r from-rose-400/50 via-rose-300/50 to-rose-100/50 w-full mt-6 mb-2" id="servicos">
             <div class="flex flex-col items-center justify-center rounded-lg w-full xl:w-5/6 mt-2 mb-2">
                 <h2 class="text-3xl font-bold text-pink-600 text-center mt-8">Serviços</h2>
                 <div class="grid grid-cols-2 lg:grid-cols-3 text-center gap-6 py-2 px-4 mt-6 w-full">
@@ -143,7 +145,7 @@
                     </a>
             </div>
             <!-- Profissionais -->
-             <div class="flex flex-col items-center justify-center rounded-lg w-full xl:w-5/6 mt-2 mb-2">
+             <div class="flex flex-col items-center justify-center rounded-lg w-full xl:w-5/6 mt-2 mb-2" id="profissionais">
                 <h2 class="text-3xl font-bold text-pink-600 text-center mt-4">Nossos Profissionais</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 text-center gap-6 py-2 px-4 mt-6 w-full">
                     <article class="flex flex-col items-center bg-white/50 rounded-lg shadow-md p-4">
@@ -174,5 +176,27 @@
              </div>
         </section>
     </main>
+    <footer class="bg-white/50 shadow-md w-full">
+        <div class="grid grid-cols-2 items-center justify-center w-full mt-6 mb-2">
+            <div class="flex flex-col items-center justify-center bg-linear-to-r from-rose-400/50 via-rose-300/50 to-rose-100/50 w-full h-full mt-2 mb-2">
+                <h2 class="text-xl font-bold text-pink-600 text-center mt-4">Contato</h2>
+                <br>
+                <p class="text-gray-600 mt-2 text-center">
+                    Endereço: Rua Exemplo, 123 - Bairro, Cidade - Estado<br>
+                    Telefone: (11) 99217-9843<br>
+                    Email: contato@raiovitais.com.br<br>
+                    Horário de Atendimento: Segunda a Sexta: 9h às 19h | Sábado: 10h às 16h | Domingo: Fechado
+                </p>
+            </div>
+            <div class="flex items-center justify-end">
+                <img src="img/clinica.jpg" alt="Logo Raios Vitais" class="size-auto">
+            </div>
+        </div>
+        <div class="flex items-center justify-center">
+            <p class="text-gray-600 text-center mt-2">
+                &copy; 2026 Raios Vitais. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
