@@ -21,15 +21,19 @@
                     <h3 class="text-pink-500 font-semibold">Centro de Estética Corporal e Facial</h3>
                 </div>
             </div>
-            <div class="justify-end relative w-full mr-4 mt-2 mb-2">
-                <ul class="flex items-center justify-end space-x-6 text-pink-400 hover:text-pink-600 text-lg font-semibold mr-4 mt-2 mb-2">
+            <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex lg:hidden items-center justify-center hover:bg-gray-200/50 hover:border-2 border-gray-200/75 rounded-xl p-2 w-10 h-10" aria-controls="navbar-cta" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
+            </button>
+            <div class="hidden lg:flex dm:justify-between lg:justify-end relative w-full mr-4 mt-2 mb-2" id="navbar-cta">
+                <ul class="flex flex-col lg:flex-row items-center justify-end gap-2 text-pink-400 text-lg font-semibold border-2 rounded-4xl bg-neutral-secondary-soft lg:space-x-8 rtl:space-x-reverse lg:border-0 lg:bg-neutral-primary p-4 lg:p-0 ml-4 mr-4 mt-2 mb-2">
                     <li><a href="#inicio" class="border-b-2 border-transparent hover:border-pink-600">Início</a></li>
                     <li><a href="#servicos" class="border-b-2 border-transparent hover:border-pink-600">Serviços</a></li>
                     <li><a href="#profissionais" class="border-b-2 border-transparent hover:border-pink-600">Profissionais</a></li>
                     <li>
                         <button class="flex items-center justify-center cursor-pointer text-white bg-pink-500/80 hover:bg-pink-500 rounded-full shadow-md px-4 py-2">
                             <a href="https://wa.me/+5511992179843" class="flex items-center justify-center w-full h-full">
-                                <img class="size-7 mr-2" src="img/calendario.png" alt="Icone de calendario">
+                                <img class="hidden lg:flex size-7 mr-2" src="img/calendario.png" alt="Icone de calendario">
                                 Agendar pelo WhatsApp
                             </a>
                         </button>
@@ -38,7 +42,7 @@
             </div>
         </nav>
      </header>
-    <main class="pt-28 flex flex-col items-center justify-center w-full" id="inicio">
+    <main class="flex flex-col items-center justify-center w-full pt-28" id="inicio">
         <!-- Carrossel -->
         <div id="default-carousel" class="relative w-full shadow-xl mb-6" data-carousel="slide">
             <!-- Carousel wrapper -->
@@ -112,12 +116,11 @@
                 </span>
             </button>
         </div>
-        <div id="default-carousel" class="relative w-full" data-carousel="slide">
         <!-- Serviços -->
         <section class="flex flex-col items-center justify-center bg-linear-to-r from-rose-400/50 via-rose-300/50 to-rose-100/50 w-full mt-6 mb-2" id="servicos">
             <div class="flex flex-col items-center justify-center rounded-lg w-full xl:w-5/6 mt-2 mb-2">
-                <h2 class="text-3xl font-extrabold text-pink-600 text-center mt-8">Serviços</h2>
-                <div class="grid grid-cols-2 lg:grid-cols-3 text-center gap-6 py-2 px-4 mt-6 w-9/10">
+                <h2 class="text-3xl font-extrabold text-pink-600 text-center border-b-3 mt-8">Serviços</h2>
+                <div class="grid grid-cols-2 lg:grid-cols-3 text-center gap-8 py-2 px-4 mt-6 w-9/10">
                     <article class="flex-1 bg-white/50 rounded-lg shadow-md p-4">
                         <h3 class="text-xl text-center font-bold text-pink-500 h-auto">Relaxamento nas Cortas</h3>
                         <img src="img/servico1.jpg" alt="Relaxamento nas Cortas" class="size-auto rounded-lg mt-2">
@@ -164,34 +167,34 @@
                         </p>
                     </article>
                 </div>
-                    <a href="https://wa.me/+5511992179843" class="bg-rose-400 hover:bg-rose-500 duration-150 text-white text-center font-semibold rounded-full w-xs py-2 px-4 mt-6 mb-8">
-                        <button class="cursor-pointer">Agendar um horário</button>
+                    <a href="https://wa.me/+5511992179843" class="bg-rose-400 hover:bg-rose-500 duration-150 text-white text-center font-semibold rounded-full w-xs py-2 px-4 mt-8 mb-2">
+                        <button class="text-lg cursor-pointer">Agendar um horário</button>
                     </a>
             </div>
             <!-- Profissionais -->
-             <div class="flex flex-col items-center justify-center rounded-lg w-full xl:w-5/6 mt-2 mb-2" id="profissionais">
-                <h2 class="text-3xl font-extrabold text-pink-600 text-center mt-4">Nossos Profissionais</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 text-center gap-6 py-2 px-4 mt-6 w-9/10">
+             <div class="flex flex-col items-center justify-center w-full mt-2 mb-2" id="profissionais">
+                <h2 class="text-3xl font-extrabold text-pink-600 text-center border-b-3 mt-4">Nossos Profissionais</h2>
+                <div class="grid grid-cols-2 lg:grid-cols-3 text-center gap-8 py-2 px-4 mt-6 w-9/10">
                     <article class="flex flex-col items-center bg-white/50 rounded-lg shadow-md p-4">
-                        <h4 class="text-xl text-center font-bold text-pink-500">Fernanda</h4>
-                        <img src="img/profissional1.jpg" alt="Profissional 1" class="size-2/3 rounded-full mt-2">
+                        <img src="img/profissional1.jpg" alt="Profissional 1" class="size-7/10 rounded-full border-4 border-red-300 mt-2">
+                        <h4 class="text-xl text-center font-bold text-pink-500 mt-4">Fernanda</h4>
                         <p class="text-rose-500 font-semibold border-2 border-red-200 bg-red-300/30 rounded-xl mt-4 p-2">
                             Pedóloga experiente, especializada em cuidados com os pés. Atua com foco na saúde,
                             conforto e bem-estar, oferecendo atendimentos que unem técnica e atenção.
                         </p>
                     </article>
                     <article class="flex flex-col items-center bg-white/50 rounded-lg shadow-md p-4">
-                        <h4 class="text-xl text-center font-bold text-pink-500">Alice</h4>
-                        <img src="img/profissional2.jpg" alt="Profissional 2" class="size-2/3 rounded-full mt-2">
+                        <img src="img/profissional2.jpg" alt="Profissional 2" class="size-7/10 rounded-full border-4 border-red-300 mt-2">
+                        <h4 class="text-xl text-center font-bold text-pink-500 mt-4">Alice</h4>
                         <p class="text-rose-500 font-semibold border-2 border-red-200 bg-red-300/30 rounded-xl mt-4 p-2">
                             Esteticista dedicada, apaixonada por realçar a beleza e a autoestima. Realiza
                             procedimentos faciais e corporais com foco em qualidade e resultados visíveis.
                         </p>
                     </article>
                     <article class="flex flex-col items-center bg-white/50 rounded-lg shadow-md p-4">
-                        <h4 class="text-xl text-center font-bold text-pink-500">Debora</h4>
-                        <img src="img/profissional3.jpg" alt="Profissional 3" class="size-2/3 rounded-full mt-2">
-                        <p class="text-rose-500 font-semibold border-2 border-red-200 bg-red-300/30 rounded-xl mt-4 p-2">
+                        <img src="img/profissional3.jpg" alt="Profissional 3" class="size-7/10 rounded-full border-4 border-red-300 mt-2">
+                        <h4 class="text-xl text-center font-bold text-pink-500 bg-red-300/30 border-2 border-red-200 rounded-4xl w-full mt-4">Debora</h4>
+                        <p class="text-rose-500 font-semibold border-2 border-red-200 bg-red-300/30 rounded-2xl mt-4 p-2">
                             Massagista, especialista em relaxamento e alívio de tensões musculares. 
                             Seus atendimentos combinam técnica e sensibilidade, promovendo bem-estar físico e mental.
                         </p>
@@ -202,9 +205,9 @@
     </main>
     <!-- footer -->
     <footer class="shadow-md w-full">
-        <div class="grid grid-cols-2 items-center justify-center w-full mt-6 mb-2">
+        <div class="grid grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mt-8 mb-2">
             <div class="flex flex-col items-center justify-center bg-linear-to-r from-rose-400/50 via-rose-300/50 to-rose-100/50 w-full h-full mt-2 mb-2">
-                <h2 class="text-3xl font-extrabold text-pink-600 text-center mt-4 mb-4">Contato</h2>
+                <h2 class="text-3xl font-extrabold text-pink-600 text-center">Contato</h2>
                 <div class="flex items-start justify-center w-2/3 gap-4 mb-2">
                     <aside class="flex flex-col items-start justify-start">
                         <img src="img/telefone.png" alt="icone de telefone" class="size-20 inline-block mr-2">
@@ -235,7 +238,7 @@
                     <p class="text-rose-500 text-xl"><strong>Horário de Atendimento:</strong><br>Segunda a Sexta: 9:00 às 19:00 | Sábado: 9:00 às 17:00 | Domingo: Fechado</p>
                 </div>
             </div>
-            <div class="flex items-center justify-end">
+            <div class="hidden lg:flex items-center justify-end">
                 <img src="img/clinica.jpg" alt="Logo Raios Vitais" class="size-auto">
             </div>
         </div>
