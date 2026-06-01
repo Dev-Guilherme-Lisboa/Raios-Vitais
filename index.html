@@ -13,7 +13,7 @@
      <header class="fixed top-0 right-0 left-0 z-50 shadow-md">
         <nav class="flex items-center justify-between relative bg-white w-full py-2 px-6 shadow-md">
             <div class="flex items-center space-x-4 w-full relative">
-                <div class="flex items-center justify-center ml-4 mt-2 mb-2">
+                <div class="hidden md:flex items-center justify-center ml-4 mt-2 mb-2">
                     <img class="size-auto rounded-full" src="img/logo.png" alt="Logo Raios Vitais">
                 </div>
                 <div class="text-center w-full relative mr-4">
@@ -22,10 +22,9 @@
                 </div>
             </div>
             <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex lg:hidden items-center justify-center hover:bg-gray-200/50 hover:border-2 border-gray-200/75 rounded-xl p-2 w-10 h-10" aria-controls="navbar-cta" aria-expanded="false">
-                <span class="sr-only">Open main menu</span>
                 <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
             </button>
-            <div class="hidden lg:flex dm:justify-between lg:justify-end relative w-full mr-4 mt-2 mb-2" id="navbar-cta">
+            <div class="hidden lg:flex md:justify-between lg:justify-end relative w-full mr-4 mt-2 mb-2" id="navbar-cta">
                 <ul class="flex flex-col lg:flex-row items-center justify-end gap-2 text-pink-400 text-lg font-semibold border-2 rounded-4xl bg-neutral-secondary-soft lg:space-x-8 rtl:space-x-reverse lg:border-0 lg:bg-neutral-primary p-4 lg:p-0 ml-4 mr-4 mt-2 mb-2">
                     <li><a href="#inicio" class="border-b-2 border-transparent hover:border-pink-600">Início</a></li>
                     <li><a href="#servicos" class="border-b-2 border-transparent hover:border-pink-600">Serviços</a></li>
@@ -44,21 +43,21 @@
      </header>
     <main class="flex flex-col items-center justify-center w-full pt-28" id="inicio">
         <!-- Carrossel -->
-        <div id="default-carousel" class="relative w-full shadow-xl mb-6" data-carousel="slide">
+        <div id="default-carousel" class="relative w-full shadow-xl mb-6" data-carousel="static">
             <!-- Carousel wrapper -->
-            <div class="relative h-110 md:56 overflow-hidden bg-linear-to-r from-rose-400/50 via-rose-100/50 to-white/50">
+            <div class="relative h-110 overflow-hidden bg-linear-to-r from-rose-400/50 via-rose-100/50 to-white/50">
                 <!-- Item 1 -->
                 <article class="hidden duration-1000 ease-in-out" data-carousel-item="active">
                     <div class="flex flex-row items-center justify-center h-full w-full">
-                        <div class="flex flex-col w-1/2 items-center justify-center text-center">
-                            <h3 class="text-xl text-pink-500 font-bold">Bem-estar e estética para o seu dia a dia</h3>
-                            <p class="text-lg text-rose-500 font-semibold leading-relaxed w-8/10 mt-2">
+                        <div class="flex flex-col w-full lg:w-1/2 items-center justify-center text-center">
+                            <h3 class="text-lg lg:text-xl text-pink-500 font-bold">Bem-estar e estética para o seu dia a dia</h3>
+                            <p class="text-medium lg:text-lg text-rose-500 font-semibold leading-relaxed w-9/10 lg:w-8/10 mt-2">
                                 Aqui você encontra tratamentos corporais e faciais que ajudam a relaxar, aliviar o estresse e renovar as energias do dia a dia.
                                 Cada atendimento é feito com carinho e atenção, para que você se sinta bem, confiante e ainda mais bonita.
                             </p>
-                            <button class="text-white font-semibold bg-rose-400 hover:bg-rose-500 rounded-full shadow-md py-2 px-4 mt-4">Saiba mais</button>
+                            <button class="hidden lg:flex text-white font-semibold bg-rose-400 hover:bg-rose-500 rounded-full shadow-md py-2 px-4 mt-4">Saiba mais</button>
                         </div>
-                        <div class="flex w-1/2 justify-center">
+                        <div class="hidden md:flex w-full lg:w-1/2 justify-center">
                             <img class="max-h-full w-auto object-contain" src="img/slide1.jpg" alt="Imagem de slide 1"/>
                         </div>
                     </div>
@@ -66,15 +65,15 @@
                 <!-- Item 2 -->
                 <article class="hidden duration-1000 ease-in-out" data-carousel-item>
                     <div class="flex flex-row items-center justify-center h-full w-full">
-                        <div class="flex flex-col w-1/2 items-center justify-center text-center">
-                            <h3 class="text-xl text-pink-500 font-bold">Por que escolher a Raios Vitais?</h3>
-                            <p class="text-lg text-rose-500 font-semibold leading-relaxed w-8/10 mt-2">
+                        <div class="flex flex-col w-full lg:w-1/2 items-center justify-center text-center">
+                            <h3 class="text-lg lg:text-xl text-pink-500 font-bold">Por que escolher a Raios Vitais?</h3>
+                            <p class="text-medium lg:text-lg text-rose-500 font-semibold leading-relaxed w-9/10 lg:w-8/10 mt-2">
                                 Cuidar de si mesma vai além da estética — é um momento de pausa, renovação e bem-estar.
                                 Na Raios Vitais, cada detalhe é pensado para proporcionar uma experiência acolhedora, relaxante e transformadora.
                             </p>
-                            <button class="text-white font-semibold bg-rose-400 hover:bg-rose-500 rounded-full shadow-md py-2 px-4 mt-4">Saiba mais</button>
+                            <button class="hidden lg:flex text-white font-semibold bg-rose-400 hover:bg-rose-500 rounded-full shadow-md py-2 px-4 mt-4">Saiba mais</button>
                         </div>
-                        <div class="flex w-1/2 justify-center">
+                        <div class="hidden md:flex w-full lg:w-1/2 justify-center">
                             <img class="max-h-full w-auto object-contain" src="img/slide2.jpg" alt="Imagem de slide 2"/>
                         </div>
                     </div>
@@ -83,14 +82,14 @@
                 <article class="hidden duration-1000 ease-in-out" data-carousel-item>
                     <div class="flex flex-row items-center justify-center h-full w-full">
                         <div class="flex flex-col w-1/2 items-center justify-center text-center">
-                            <h3 class="text-xl text-pink-500 font-bold">Cuidar de você é nossa prioridade!</h3>
-                            <p class="text-lg text-rose-500 font-semibold leading-relaxed w-8/10 mt-2">
+                            <h3 class="text-lg lg:text-xl text-pink-500 font-bold">Cuidar de você é nossa prioridade!</h3>
+                            <p class="text-medium lg:text-lg text-rose-500 font-semibold leading-relaxed w-9/10 lg:w-8/10 mt-2">
                                 Na Raios Vitais, acreditamos que cada pessoa merece um cuidado especial.
                                 Nossos profissionais estão sempre prontos para ouvir suas necessidades e oferecer o melhor tratamento.
                             </p>
-                            <button class="text-white font-semibold bg-rose-400 hover:bg-rose-500 rounded-full shadow-md py-2 px-4 mt-4">Saiba mais</button>
+                            <button class="hidden md:flex text-white font-semibold bg-rose-400 hover:bg-rose-500 rounded-full shadow-md py-2 px-4 mt-4">Saiba mais</button>
                         </div>
-                        <div class="flex w-1/2 justify-center">
+                        <div class="hidden lg:flex w-1/2 justify-center">
                             <img class="max-h-full w-auto object-contain" src="img/slide3.jpg" alt="Imagem de slide 3"/>
                         </div>
                     </div>
@@ -120,7 +119,7 @@
         <section class="flex flex-col items-center justify-center bg-linear-to-r from-rose-400/50 via-rose-300/50 to-rose-100/50 w-full mt-6 mb-2" id="servicos">
             <div class="flex flex-col items-center justify-center rounded-lg w-full xl:w-5/6 mt-2 mb-2">
                 <h2 class="text-3xl font-extrabold text-pink-600 text-center border-b-3 mt-8">Serviços</h2>
-                <div class="grid grid-cols-2 lg:grid-cols-3 text-center gap-8 py-2 px-4 mt-6 w-9/10">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center gap-8 py-2 px-4 mt-6 w-9/10">
                     <article class="flex-1 bg-white/50 rounded-lg shadow-md p-4">
                         <h3 class="text-xl text-center font-bold text-pink-500 h-auto">Relaxamento nas Cortas</h3>
                         <img src="img/servico1.jpg" alt="Relaxamento nas Cortas" class="size-auto rounded-lg mt-2">
@@ -174,7 +173,7 @@
             <!-- Profissionais -->
              <div class="flex flex-col items-center justify-center w-full mt-2 mb-2" id="profissionais">
                 <h2 class="text-3xl font-extrabold text-pink-600 text-center border-b-3 mt-4">Nossos Profissionais</h2>
-                <div class="grid grid-cols-2 lg:grid-cols-3 text-center gap-8 py-2 px-4 mt-6 w-9/10">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center gap-8 py-2 px-4 mt-6 w-9/10">
                     <article class="flex flex-col items-center bg-white/50 rounded-lg shadow-md p-4">
                         <img src="img/profissional1.jpg" alt="Profissional 1" class="size-7/10 rounded-full border-4 border-red-300 mt-2">
                         <h4 class="text-xl text-center font-bold text-pink-500 mt-4">Fernanda</h4>
@@ -207,9 +206,9 @@
     <footer class="shadow-md w-full">
         <div class="grid grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mt-8 mb-2">
             <div class="flex flex-col items-center justify-center bg-linear-to-r from-rose-400/50 via-rose-300/50 to-rose-100/50 w-full h-full mt-2 mb-2">
-                <h2 class="text-3xl font-extrabold text-pink-600 text-center">Contato</h2>
+                <h2 class="text-3xl font-extrabold text-pink-600 text-center border-b-3">Contato</h2>
                 <div class="flex items-start justify-center w-2/3 gap-4 mb-2">
-                    <aside class="flex flex-col items-start justify-start">
+                    <aside class="hidden md:flex flex-col items-start justify-start">
                         <img src="img/telefone.png" alt="icone de telefone" class="size-20 inline-block mr-2">
                         <img src="img/email.png" alt="icone de email" class="size-20 inline-block mr-4">
                         <img src="img/gps.png" alt="icone de endereco" class="size-20 inline-block mr-4">
@@ -223,15 +222,15 @@
                 <div class="flex items-center justify-center text-center gap-12 px-4 w-full">
                     <a href="https://www.instagram.com/raiosvitais/" class="flex items-center justify-center text-center">
                         <img src="img/instagram.png" alt="icone de instagram" class="size-20 inline-block">
-                        <span class="text-rose-500 text-xl">Instagram</span>
+                        <span class="hidden lg:flex text-rose-500 text-xl">Instagram</span>
                     </a>
                     <a href="https://wa.me/+5511992179843" class="flex items-center justify-center text-center">
                         <img src="img/whatsapp.png" alt="icone de whatsapp" class="size-20 inline-block">
-                        <span class="text-rose-500 text-xl">WhatsApp</span>
+                        <span class="hidden lg:flex text-rose-500 text-xl">WhatsApp</span>
                     </a>
                     <a href="https://www.facebook.com/raiosvitais" class="flex items-center justify-center text-center">
                         <img src="img/facebook.png" alt="icone de facebook" class="size-20 inline-block">
-                        <span class="text-rose-500 text-xl">Facebook</span>
+                        <span class="hidden lg:flex text-rose-500 text-xl">Facebook</span>
                     </a>
                 </div>
                 <div class="flex items-center justify-center text-center mt-4">
