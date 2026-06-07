@@ -1,14 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Language" content="pt-BR">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="title" content="Raios Vitais - Centro de Estética Corporal e Facial">
+    <meta name="author" content="Raios Vitais">
+    <meta name="keywords" content="Raios Vitais, centro de estética, tratamentos corporais, tratamentos faciais, bem-estar, relaxamento, cuidados personalizados, beleza, autoestima, agendamento online">
+    <meta name="description" content="Raios Vitais é um centro de estética corporal e facial dedicado a proporcionar bem-estar, relaxamento e cuidados personalizados. Oferecemos uma variedade de tratamentos para realçar sua beleza e autoestima. Agende seu horário e descubra o cuidado que você merece!">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
     <title>Raios Vitais</title>
 </head>
-<body class="bg-[url(img/fundo.png)] bg-fixed bg-contain scroll-smooth min-h-screen">
+<body class="bg-[url(img/fundo.png)] bg-fixed bg-contain font-[Cinzel_Decorative] scroll-smooth min-h-screen">
     <!-- Navbar -->
      <header class="fixed top-0 right-0 left-0 z-50 shadow-md">
         <nav class="flex items-center justify-between relative bg-white w-full py-2 px-6 shadow-md">
@@ -33,15 +42,12 @@
                     <li><a href="#inicio" class="border-b-2 border-transparent hover:border-pink-600">Início</a></li>
                     <li><a href="#servicos" class="border-b-2 border-transparent hover:border-pink-600">Serviços</a></li>
                     <li><a href="#profissionais" class="border-b-2 border-transparent hover:border-pink-600">Profissionais</a></li>
+                    <li><a href="#contato" class="border-b-2 border-transparent hover:border-pink-600">Contato</a></li>
                     <li>
-                        <button class="hidden md:flex items-center justify-center cursor-pointer text-white bg-pink-500/80 hover:bg-pink-500 rounded-full shadow-md px-4 py-2">
-                            <a href="https://wa.me/+5511992179843" class="flex items-center justify-center w-full h-full">
-                                <img class="hidden lg:flex size-7 mr-2" src="img/calendario.png" alt="Icone de calendario">
-                                Agendar pelo WhatsApp
-                            </a>
-                        </button>
-                        <!-- copia para mobile -->
-                        <a href="https://wa.me/+5511992179843" class="flex md:hidden text-center text-white border-2 bg-pink-500/80 hover:bg-pink-500 rounded-4xl px-2 py-2 w-full h-full">Agendar pelo WhatsApp</a>
+                        <a href="https://wa.me/+5511992179843" class="flex items-center justify-center text-center text-white bg-pink-500/80 hover:bg-pink-500 rounded-4xl md:rounded-full shadow-md px-4 py-2">
+                            <img class="hidden lg:flex size-7 mr-2" src="img/calendario.png" alt="Ícone de calendário para agendamento">
+                            Agendar pelo WhatsApp
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -51,7 +57,7 @@
         <!-- Carrossel -->
         <div id="default-carousel" class="relative w-full shadow-xl mb-6" data-carousel="slide">
             <!-- Carousel wrapper -->
-            <div class="relative h-70 lg:h-110 overflow-hidden bg-linear-to-r from-rose-400/50 via-rose-100/50 to-white/50">
+            <div class="relative h-73 lg:h-110 overflow-hidden bg-linear-to-r from-rose-400/50 via-rose-100/50 to-white/50">
                 <!-- Item 1 -->
                 <article class="hidden duration-1000 ease-in-out" data-carousel-item="active">
                     <div class="flex flex-row items-center justify-center h-full w-full">
@@ -61,10 +67,12 @@
                                 Aqui você encontra tratamentos corporais e faciais que ajudam a relaxar, aliviar o estresse e renovar as energias do dia a dia.
                                 Cada atendimento é feito com carinho e atenção, para que você se sinta bem, confiante e ainda mais bonita.
                             </p>
-                            <button class="hidden lg:flex text-white font-semibold bg-rose-400 hover:bg-rose-500 rounded-full shadow-md py-2 px-4 mt-4">Saiba mais</button>
+                            <button class="hidden md:flex text-white font-semibold bg-rose-400 hover:bg-rose-500 rounded-full shadow-md py-2 px-4 mt-4">
+                                <a href="https://wa.me/+5511992179843">Saiba mais</a>
+                            </button>
                         </div>
                         <div class="hidden md:flex w-full lg:w-1/2 justify-center">
-                            <img class="max-h-full w-auto object-contain" src="img/slide1.jpg" alt="Imagem de slide 1"/>
+                            <img class="max-h-full w-auto object-contain" src="img/slide1.jpg" alt="Mulher relaxando durante um tratamento facial" loading="lazy"/>
                         </div>
                     </div>
                 </article>
@@ -77,10 +85,12 @@
                                 Cuidar de si mesma vai além da estética — é um momento de pausa, renovação e bem-estar.
                                 Na Raios Vitais, cada detalhe é pensado para proporcionar uma experiência acolhedora, relaxante e transformadora.
                             </p>
-                            <button class="hidden lg:flex text-white font-semibold bg-rose-400 hover:bg-rose-500 rounded-full shadow-md py-2 px-4 mt-4">Saiba mais</button>
+                            <button class="hidden md:flex text-white font-semibold bg-rose-400 hover:bg-rose-500 rounded-full shadow-md py-2 px-4 mt-4">
+                                <a href="https://wa.me/+5511992179843">Saiba mais</a>
+                            </button>
                         </div>
                         <div class="hidden md:flex w-full lg:w-1/2 justify-center">
-                            <img class="max-h-full w-auto object-contain" src="img/slide2.jpg" alt="Imagem de slide 2"/>
+                            <img class="max-h-full w-auto object-contain" src="img/slide2.jpg" alt="Profissional aplicando tratamento estético em cliente" loading="lazy"/>
                         </div>
                     </div>
                 </article>
@@ -93,10 +103,12 @@
                                 Na Raios Vitais, acreditamos que cada pessoa merece um cuidado especial.
                                 Nossos profissionais estão sempre prontos para ouvir suas necessidades e oferecer o melhor tratamento.
                             </p>
-                            <button class="hidden md:flex text-white font-semibold bg-rose-400 hover:bg-rose-500 rounded-full shadow-md py-2 px-4 mt-4">Saiba mais</button>
+                            <button class="hidden md:flex text-white font-semibold bg-rose-400 hover:bg-rose-500 rounded-full shadow-md py-2 px-4 mt-4">
+                                <a href="https://wa.me/+5511992179843">Saiba mais</a>
+                            </button>
                         </div>
                         <div class="hidden md:flex w-full lg:w-1/2 justify-center">
-                            <img class="max-h-full w-auto object-contain" src="img/slide3.jpg" alt="Imagem de slide 3"/>
+                            <img class="max-h-full w-auto object-contain" src="img/slide3.jpg" alt="Mulher sorrindo após um tratamento de beleza" loading="lazy"/>
                         </div>
                     </div>
                 </article>
@@ -128,7 +140,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center gap-8 py-2 px-4 mt-6 w-9/10">
                     <article class="flex-1 bg-white/50 rounded-lg shadow-md p-4">
                         <h3 class="text-xl text-center font-bold text-pink-500 h-auto">Relaxamento nas Cortas</h3>
-                        <img src="img/servico1.jpg" alt="Relaxamento nas Cortas" class="size-auto rounded-lg mt-2">
+                        <img class="size-auto rounded-lg mt-2" src="img/servico1.jpg" alt="Pessoa recebendo massagem relaxante nas costas" loading="lazy">
                         <p class="text-rose-500 font-semibold mt-2">
                             Alivia tensões musculares e promove uma sensação profunda de relaxamento, 
                             ideal para quem sofre com estresse e dores na região.
@@ -136,7 +148,7 @@
                     </article>
                     <article class="flex-1 bg-white/50 rounded-lg shadow-md p-4">
                         <h3 class="text-xl text-center font-bold text-pink-500 h-auto">Tratamento Facial</h3>
-                        <img src="img/servico2.jpeg" alt="Tratamento Facial" class="size-auto rounded-lg mt-2">
+                        <img class="size-auto rounded-lg mt-2" src="img/servico2.jpeg" alt="Tratamento facial com aplicação de máscara" loading="lazy">
                         <p class="text-rose-500 font-semibold mt-2">
                             Cuida da pele do rosto, ajudando na hidratação, revitalização 
                             e proporcionando uma aparência mais saudável e iluminada.
@@ -144,7 +156,7 @@
                     </article>
                     <article class="flex-1 bg-white/50 rounded-lg shadow-md p-4">
                         <h3 class="text-xl text-center font-bold text-pink-500 h-auto">Spa dos Pés</h3>
-                        <img src="img/servico3.jpeg" alt="Spa dos Pés" class="size-auto rounded-lg mt-2">
+                        <img class="size-auto rounded-lg mt-2" src="img/servico3.jpeg" alt="Pés recebendo tratamento de spa" loading="lazy">
                         <p class="text-rose-500 font-semibold mt-2">
                             Proporciona descanso e bem-estar, aliviando o cansaço 
                             e deixando os pés mais leves, macios e relaxados.
@@ -152,27 +164,27 @@
                     </article>
                     <article class="flex-1 bg-white/50 rounded-lg shadow-md p-4">
                         <h3 class="text-xl text-center font-bold text-pink-500 h-auto">Massagem Relaxante</h3>
-                        <img src="img/slide1.jpg" alt="Massagem Relaxante" class="size-auto rounded-lg mt-2">
+                        <img class="size-auto rounded-lg mt-2" src="img/slide1.jpg" alt="Pessoa recebendo massagem relaxante" loading="lazy">
                         <p class="text-rose-500 font-semibold mt-2">
                             Proporciona alívio para tensões e estresse, promovendo um estado de relaxamento profundo.
                         </p>
                     </article>
                     <article class="flex-1 bg-white/50 rounded-lg shadow-md p-4">
                         <h3 class="text-xl text-center font-bold text-pink-500 h-auto">Hidratação Corporal</h3>
-                        <img src="img/slide2.jpg" alt="Hidratação Corporal" class="size-auto rounded-lg mt-2">
+                        <img class="size-auto rounded-lg mt-2" src="img/slide2.jpg" alt="Pele hidratada e suave" loading="lazy">
                         <p class="text-rose-500 font-semibold mt-2">
                             Nutre e hidrata a pele do corpo, deixando-a mais macia, suave e revitalizada.
                         </p>
                     </article>
                     <article class="flex-1 bg-white/50 rounded-lg shadow-md p-4">
                         <h3 class="text-xl text-center font-bold text-pink-500 h-auto">Limpeza de Pele</h3>
-                        <img src="img/slide3.jpg" alt="Limpeza de Pele" class="size-auto rounded-lg mt-2">
+                        <img class="size-auto rounded-lg mt-2" src="img/slide3.jpg" alt="Limpeza de pele profunda" loading="lazy">
                         <p class="text-rose-500 font-semibold mt-2">
                             Remove impurezas e células mortas, ajudando a desobstruir os poros e melhorar a textura da pele.
                         </p>
                     </article>
                 </div>
-                    <a href="https://wa.me/+5511992179843" class="bg-rose-400 hover:bg-rose-500 duration-150 text-white text-center font-semibold rounded-full w-xs py-2 px-4 mt-8 mb-2">
+                    <a class="bg-rose-400 hover:bg-rose-500 duration-150 text-white text-center font-semibold rounded-full w-xs py-2 px-4 mt-8 mb-2" href="https://wa.me/+5511992179843">
                         <button class="text-lg cursor-pointer">Agendar um horário</button>
                     </a>
             </div>
@@ -181,7 +193,7 @@
                 <h2 class="text-3xl font-extrabold text-pink-600 text-center border-b-3 mt-4">Nossos Profissionais</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center gap-8 py-2 px-4 mt-6 w-9/10">
                     <article class="flex flex-col items-center bg-white/50 rounded-lg shadow-md p-4">
-                        <img src="img/profissional1.jpg" alt="Profissional 1" class="size-7/10 rounded-full border-4 border-red-300 mt-2">
+                        <img class="size-7/10 rounded-full border-4 border-red-300 mt-2" src="img/profissional1.jpg" alt="Foto da profissional Fernanda, pedóloga" loading="lazy">
                         <h4 class="text-xl text-center font-bold text-pink-500 bg-red-300/30 border-2 border-red-200 rounded-4xl w-full mt-4">Fernanda</h4>
                         <p class="text-rose-500 font-semibold border-2 border-red-200 bg-red-300/30 rounded-xl mt-4 p-2">
                             Pedóloga experiente, especializada em cuidados com os pés. Atua com foco na saúde,
@@ -189,7 +201,7 @@
                         </p>
                     </article>
                     <article class="flex flex-col items-center bg-white/50 rounded-lg shadow-md p-4">
-                        <img src="img/profissional2.jpg" alt="Profissional 2" class="size-7/10 rounded-full border-4 border-red-300 mt-2">
+                        <img class="size-7/10 rounded-full border-4 border-red-300 mt-2" src="img/profissional2.jpg" alt="Foto da profissional Alice, esteticista" loading="lazy">
                         <h4 class="text-xl text-center font-bold text-pink-500 bg-red-300/30 border-2 border-red-200 rounded-4xl w-full mt-4">Alice</h4>
                         <p class="text-rose-500 font-semibold border-2 border-red-200 bg-red-300/30 rounded-2xl mt-4 p-2">
                             Esteticista dedicada, apaixonada por realçar a beleza e a autoestima. Realiza
@@ -197,7 +209,7 @@
                         </p>
                     </article>
                     <article class="flex flex-col items-center bg-white/50 rounded-lg shadow-md p-4">
-                        <img src="img/profissional3.jpg" alt="Profissional 3" class="size-7/10 rounded-full border-4 border-red-300 mt-2">
+                        <img class="size-7/10 rounded-full border-4 border-red-300 mt-2" src="img/profissional3.jpg" alt="Foto da profissional Debora, massagista" loading="lazy">
                         <h4 class="text-xl text-center font-bold text-pink-500 bg-red-300/30 border-2 border-red-200 rounded-4xl w-full mt-4">Debora</h4>
                         <p class="text-rose-500 font-semibold border-2 border-red-200 bg-red-300/30 rounded-2xl mt-4 p-2">
                             Massagista, especialista em relaxamento e alívio de tensões musculares. 
@@ -209,22 +221,19 @@
         </section>
     </main>
     <!-- footer -->
-    <footer class="shadow-md w-full">
+    <footer class="shadow-md w-full" id="contato">
         <div class="grid grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mt-8 mb-2">
             <div class="flex flex-col items-center justify-center bg-linear-to-r from-rose-400/50 via-rose-300/50 to-rose-100/50 w-full h-full mt-2 mb-2">
                 <h2 class="text-3xl font-extrabold text-pink-600 text-center border-b-3">Contato</h2>
                 <div class="flex items-start justify-center w-full md:w-2/3 gap-4 mt-4 mb-2">
                     <aside class="hidden md:flex flex-col items-start justify-start">
-                        <img src="img/telefone.png" alt="icone de telefone" class="size-20 inline-block mr-2">
-                        <img src="img/email.png" alt="icone de email" class="size-20 inline-block mr-4">
-                        <img src="img/gps.png" alt="icone de endereco" class="size-20 inline-block mr-4">
+                        <img class="size-20 inline-block mr-2" src="img/telefone.png" alt="Ícone de telefone" loading="lazy">
+                        <img class="size-20 inline-block mr-4" src="img/email.png" alt="Ícone de e-mail" loading="lazy">
+                        <img class="size-20 inline-block mr-4" src="img/gps.png" alt="Ícone de localização" loading="lazy">
                     </aside>
                     <aside class="hidden md:flex flex-col items-start justify-center gap-y-4 md:gap-10 pl-2 mt-2">
-                        <h3 class="flex md:hidden text-rose-500 text-xl font-bold">Telefone:</h3>
                         <p class="text-rose-500 text-xl">(11) 2205-5026<br> (11) 99217-9843</p>
-                        <h3 class="flex md:hidden text-rose-500 text-xl font-bold">E-mail:</h3>
                         <p class="text-rose-500 text-xl">nardja_sol@hotmail.com</p>
-                        <h3 class="flex md:hidden text-rose-500 text-xl font-bold">Endereço:</h3>
                         <p class="text-rose-500 text-xl mt-1">Estrada de Itaquera Guaianazes 461 f,<br> São Paulo, SP, Brazil, 08246000</p>
                     </aside>
                     <!-- copia para mobile -->
@@ -238,16 +247,16 @@
                     </aside>
                 </div>
                 <div class="flex items-center justify-center text-center gap-12 px-4 w-full">
-                    <a href="https://www.instagram.com/raiosvitais/" class="flex items-center justify-center text-center">
-                        <img src="img/instagram.png" alt="icone de instagram" class="size-20 inline-block">
+                    <a class="flex items-center justify-center text-center" href="https://www.instagram.com/raiosvitais/">
+                        <img class="size-20 inline-block" src="img/instagram.png" alt="Ícone do Instagram" loading="lazy">
                         <span class="hidden lg:flex text-rose-500 text-xl">Instagram</span>
                     </a>
-                    <a href="https://wa.me/+5511992179843" class="flex items-center justify-center text-center">
-                        <img src="img/whatsapp.png" alt="icone de whatsapp" class="size-20 inline-block">
+                    <a class="flex items-center justify-center text-center" href="https://wa.me/+5511992179843">
+                        <img class="size-20 inline-block" src="img/whatsapp.png" alt="Ícone do WhatsApp" loading="lazy">
                         <span class="hidden lg:flex text-rose-500 text-xl">WhatsApp</span>
                     </a>
-                    <a href="https://www.facebook.com/raiosvitais" class="flex items-center justify-center text-center">
-                        <img src="img/facebook.png" alt="icone de facebook" class="size-20 inline-block">
+                    <a class="flex items-center justify-center text-center" href="https://www.facebook.com/raiosvitais">
+                        <img class="size-20 inline-block" src="img/facebook.png" alt="Ícone do Facebook" loading="lazy">
                         <span class="hidden lg:flex text-rose-500 text-xl">Facebook</span>
                     </a>
                 </div>
@@ -256,7 +265,7 @@
                 </div>
             </div>
             <div class="hidden lg:flex items-center justify-end">
-                <img src="img/clinica.jpg" alt="Logo Raios Vitais" class="size-auto">
+                <img class="size-auto" src="img/clinica.jpg" alt="Fachada da clínica Raios Vitais" loading="lazy">
             </div>
         </div>
         <div class="flex items-center justify-center">
@@ -267,6 +276,6 @@
             </p>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js" defer></script>
 </body>
 </html>
