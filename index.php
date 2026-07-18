@@ -148,17 +148,23 @@
     </div>
     <!-- Footer -->
     <footer id="contato">
-        <div class="contato">
-            <a href="#" class="whats"></a>
-            <a href="#" class="facebook"></a>
-            <a href="#" class="insta"></a>
+        <div class="footer-left">
+            <div class="localizacao">
+                <p><strong>Endereço:</strong> Rua da Saúde, 123, Cidade, Estado</p>
+                <p><strong>Telefone:</strong> (11) 1234-5678</p>
+                <p><strong>Email:</strong> raiosvitais@gmail.com</p>
+            </div>
         </div>
-        <div class="localizacao">
-            <p>Endereço: Rua da Saúde, 123, Cidade, Estado</p>
-            <p>Telefone: (11) 1234-5678</p>
-            <p>Email: raiosvitais@gmail.com</p>
+        <div class="footer-center">
+            <p>&copy; 2024 Raios Vitais. Todos os direitos reservados.</p>
         </div>
-        <p>&copy; 2024 Raios Vitais. Todos os direitos reservados.</p>
+        <div class="footer-right">
+            <div class="contato">
+                <a href="#" class="whats"></a>
+                <a href="#" class="facebook"></a>
+                <a href="#" class="insta"></a>
+            </div>
+        </div>
     </footer>
     <script src="js/java.js" defer></script>
 </body>

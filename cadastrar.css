@@ -24,7 +24,7 @@ body {
     top: 20px;
     left: 20px;
     padding: 10px 15px;
-    background-color: #ab4aec;
+    background-color: #a200ff;
     color: white;
     border: none;
     border-radius: 5px;
@@ -32,14 +32,14 @@ body {
     transition: background-color 0.3s;
 }
 .voltar button:hover {
-    background-color: #9228d6;
+    background-color: #8800dd;
 }
 form {
     background: #fff;
     padding: 20px;
-    border: #ab4aec 2px solid;
+    border: #a200ff 2px solid;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(162, 0, 255, 0.2);
     width: 500px;
     margin: auto;
 }
@@ -62,17 +62,17 @@ form {
     transition: color 0.3s;
 }
 .sessoes a:hover {
-    color: #ab4aec;
+    color: #a200ff;
     font-weight: bold;
 }
 .cadastrar {
     text-align: center;
-    color: #ab4aec;
-    border-bottom: #ab4aec 2px solid;
+    color: #a200ff;
+    border-bottom: #a200ff 2px solid;
 }
 .cadastrar:hover {
-    color: #9228d6;
-    border-bottom: #9228d6 2px solid;
+    color: #8800dd;
+    border-bottom: #8800dd 2px solid;
     font-weight: bold;
 }
 .user-box {
@@ -92,7 +92,7 @@ form {
     font-size: 16px;
 }
 .user-box input:focus {
-    border: #ab4aec 2px solid;
+    border: #a200ff 2px solid;
     outline: none;
 }
 .form-row {
@@ -119,7 +119,7 @@ form {
     cursor: pointer;
 }
 .botoes input[type="submit"] {
-    background: #ab4aec;
+    background: #a200ff;
 }
 .botoes input[type="reset"] {
     background: #6c757d;
@@ -128,5 +128,5 @@ form {
     background: #5a6268;
 }
 .botoes input[type="submit"]:hover {
-    background: #9228d6;
+    background: #8800dd;
 }

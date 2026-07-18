@@ -18,15 +18,16 @@ body {
 .navbar {
     background-color: white;
     color: black;
-    padding: 7.5px;
+    padding: 12px 20px;
     display: flex;
     flex-direction: row;
     position: sticky;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
     top: 0;
-    width: 100vw;
+    width: 100%;
+    z-index: 1000;
 }
 .titulo {
     display: flex;
@@ -60,7 +61,7 @@ li a {
     transition: color 0.3s;
 }
 li a:hover {
-    color: #ec008c;
+    color: #a200ff;
 }
 .menu{
 height: 40px;
@@ -91,7 +92,7 @@ height: 40px;
     height: 4px;
     width: 30px;
     margin-top: 4px;
-    background-color: #ec008c;
+    background-color: #a200ff;
 }
 
 
@@ -105,12 +106,49 @@ main {
 }
 .bem_vindo {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(162, 0, 255, 0.1);
 }
 
-.titulo_servicos{
+.bem_vindo h1 {
+    color: #a200ff;
+    font-size: 2.5em;
+    margin: 0 0 15px 0;
+    font-weight: bold;
+}
+
+.bem_vindo p {
+    color: #666;
+    font-size: 1.1em;
+    margin: 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titulo_servicos {
     justify-self: center;
     align-self: center;
+    color: #a200ff;
+    font-size: 2em;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.titulo_servicos::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #a200ff;
+    border-radius: 2px;
 }
 .serviços {
     text-align: center;
@@ -123,25 +161,40 @@ main {
 
 
 .Cards {
-    
-
     display: inline-block;
-    margin: 30px;
+    margin: 20px;
     background-color: white;
-    padding: 15px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 15px;
     text-align: center;
     display: flex;
     flex-direction: column;
     flex: 1 0 320px;  
-    max-width: 320px;      
+    max-width: 320px;
+    transition: all 0.3s ease;
+}
+
+.Cards:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(162, 0, 255, 0.2);
+}
+
+.Cards h3 {
+    color: #a200ff;
+    font-size: 1.3em;
+    margin: 15px 0 10px 0;
 }
 
 section img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.Cards img:hover {
+    transform: scale(1.05);
 }
 section h3 {
     margin-top: 10px;
@@ -157,7 +210,7 @@ section button, .Esconder {
     margin-top: 15px;
     padding: 10px 20px;
     border-radius: 10px;
-    background-color: #ec008c;
+    background-color: #a200ff;
     color: white;
     border: none;
     cursor: pointer;
@@ -177,36 +230,64 @@ section button:hover, .Esconder:hover {
     align-items: center;
 }
 .titulo_funcionarios {
-    margin-bottom: 20px;
-
+    margin-bottom: 40px;
     width: 100%;
+    color: #a200ff;
+    font-size: 2em;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.titulo_funcionarios::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #a200ff;
+    border-radius: 2px;
 }
 article {
-
     display: flex;
     flex-direction: column;  
     align-items: center;
-
     width: 100%;
     max-width: 360px;
-    margin: 10px;
+    margin: 15px;
     background-color: white;
-    padding: 15px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 15px;
     text-align: center;
+    transition: all 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(162, 0, 255, 0.2);
 }
 article img {
     max-width: 200px;
-    height: auto;
-    border-radius: 75%;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+article:hover img {
+    transform: scale(1.08);
 }
 .info_funcionario {
     margin-left: 0;      
     text-align: center;
 }
 .info_funcionario h3 {
-    margin-top: 10px;
+    margin-top: 15px;
+    color: #a200ff;
+    font-size: 1.3em;
 }
 .info_funcionario p {
     display: block;
@@ -217,37 +298,99 @@ article img {
 }
 
 footer {
-    background-color: #4c2c3f;
+    background-color: #4a4a4a;
     color: white;
-    text-align: center;
-    padding: 20px;
-}
-.contato {
-    margin-bottom: 10px;
+    padding: 50px 40px;
+    margin-top: 60px;
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-left {
+    flex: 1;
+    min-width: 250px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer-left p {
+    margin: 10px 0;
+    font-size: 0.95em;
+    line-height: 1.6;
+    padding: 0 10px;
+}
+
+.footer-center {
+    flex: 1;
+    min-width: 250px;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5px;
 }
 
-.whats, .facebook, .insta{
-width: 60px;
-height: 60px;
-display: block;
-transition-duration: 0.4s;
+.footer-center p {
+    margin: 0;
+    font-size: 0.95em;
+    line-height: 1.6;
+    padding: 0 10px;
 }
 
-.whats:hover, .facebook:hover, .insta:hover{
-    scale: 1.1;
+.footer-right {
+    flex: 1;
+    min-width: 250px;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.contato {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
 }
 
-.whats{background-image: url("img/whatsapp.webp"); background-size: contain;}
-.facebook{background-image: url("img/facebook.webp");  background-size: 87%; background-repeat: no-repeat; background-position: center;}
-.insta{background-image: url("img/instagram.png");  background-size: 110%;}
+.whats, .facebook, .insta {
+    width: 50px;
+    height: 50px;
+    display: block;
+    transition-duration: 0.4s;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 8px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+}
+
+.whats:hover, .facebook:hover, .insta:hover {
+    scale: 1.15;
+    background-color: rgba(162, 0, 255, 0.3);
+}
+
+.whats { background-image: url("img/whatsapp.webp"); background-size: 70%; }
+.facebook { background-image: url("img/facebook.webp"); background-size: 70%; }
+.insta { background-image: url("img/instagram.png"); background-size: 80%; }
 
 
 .localizacao {
-    margin-bottom: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.localizacao p {
+    margin: 8px 0;
+    font-size: 0.95em;
+    line-height: 1.6;
 }
 
 /* ------------------------------------ PHP e Javascript -------------------------------  */
@@ -300,9 +443,6 @@ transition-duration: 0.4s;
    }
 
    article {
-
-    
-
     width: 100vw;
     max-width: none;
     margin: 0px;
@@ -311,7 +451,23 @@ transition-duration: 0.4s;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     border-radius: 10px;
     text-align: center;
-}
+   }
+
+   footer {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 30px;
+   }
+
+   .footer-left, .footer-center, .footer-right {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+   }
+
+   .contato {
+    justify-content: center;
+   }
 }
 
 

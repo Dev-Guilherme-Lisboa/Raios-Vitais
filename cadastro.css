@@ -40,7 +40,7 @@ h2 {
     transition: color 0.3s;
 }
 .sessoes a:hover {
-    color: #ab4aec;
+    color: #a200ff;
     font-weight: bold;
 }
 .cadastrar {
@@ -48,7 +48,7 @@ h2 {
     border-bottom: #333 2px solid;
 }
 .cadastrar:hover {
-    border-bottom: #ab4aec 2px solid;
+    border-bottom: #a200ff 2px solid;
     font-weight: bold;
 }
 input[type="text"], input[type="email"], input[type="password"] {
@@ -62,7 +62,7 @@ input[type="text"], input[type="email"], input[type="password"] {
 input[type="submit"] {
     width: 100%;
     padding: 10px;
-    background: #28a745;
+    background: #a200ff;
     border: none;
     border-radius: 3px;
     color: #fff;
@@ -70,7 +70,7 @@ input[type="submit"] {
     cursor: pointer;
 }
 input[type="submit"]:hover {
-    background: #ab4aec;
+    background: #8800dd;
 }
 label {
     display: block;
